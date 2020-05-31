@@ -29,6 +29,19 @@ https://www.fluentd.org/guides/recipes/docker-logging
 > The old fashion way is to write these messages to a log file, but that inherits certain problems specifically when we try to perform some analysis over the registers, or in the other side, if the application have multiple instances running, the scenario becomes even more complex.
 
 
+### Testing the log handling pipeline
+
+```
+docker run --log-driver=fluentd --log-opt tag="docker.{.ID}}" ubuntu echo 'Hello Fluentd!'
+Hello Fluentd!
+```
+
+### Running fluentd in a container exposed to the host on 24224
+
+https://github.com/kzk/docker-compose-efk/tree/master/fluentd
+
+
+
 
 
 ## References
