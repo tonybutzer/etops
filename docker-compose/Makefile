@@ -11,7 +11,7 @@ exec:
 	docker-compose exec debug bash
 
 git:
-	(cd /opt/cube; make)
+	(cd /opt/etops; make)
 
 upgrade:
 	sudo curl -L https://github.com/docker/compose/releases/download/1.25.0-rc4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
