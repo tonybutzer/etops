@@ -26,7 +26,7 @@ https://www.fluentd.org/guides/recipes/elasticsearch-and-s3
 ### How to source docker into fluetd?
 https://www.fluentd.org/guides/recipes/docker-logging
 
-	The old fashion way is to write these messages to a log file, but that inherits certain problems specifically when we try to perform some analysis over the registers, or in the other side, if the application have multiple instances running, the scenario becomes even more complex.
+> The old fashion way is to write these messages to a log file, but that inherits certain problems specifically when we try to perform some analysis over the registers, or in the other side, if the application have multiple instances running, the scenario becomes even more complex.
 
 
 
