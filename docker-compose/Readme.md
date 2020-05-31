@@ -19,6 +19,18 @@ https://www.fluentd.org/guides/recipes/elasticsearch-and-s3
 
 ![](https://www.fluentd.org/assets/img/recipes/elasticsearch-s3-fluentd.png)
 
+## Doc
+
+- the ./etc dir contains configs for elastic, kibana, fleuntd
+
+### How to source docker into fluetd?
+https://www.fluentd.org/guides/recipes/docker-logging
+
+	The old fashion way is to write these messages to a log file, but that inherits certain problems specifically when we try to perform some analysis over the registers, or in the other side, if the application have multiple instances running, the scenario becomes even more complex.
+
+
+
+
 ## References
 
 https://medium.com/better-programming/elasticsearch-cluster-and-kibana-using-docker-compose-4f9c4d6c5470
