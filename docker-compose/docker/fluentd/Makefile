@@ -11,3 +11,7 @@ push:
 
 git:
 	(cd /opt/etops; make)
+
+
+fix:
+	sudo apt install gnupg2 pass

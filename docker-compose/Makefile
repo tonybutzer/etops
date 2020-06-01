@@ -9,6 +9,8 @@ down:
 
 exec:
 	docker-compose exec debug bash
+test_logging:
+	docker run --log-driver=fluentd --log-opt tag="docker.{{.Name}}" ubuntu echo 'Hello Fluentd!'
 
 git:
 	(cd /opt/etops; make)
