@@ -1,5 +1,8 @@
 FROM python
 
+RUN apt-get update && \
+	apt-get install -y vim
+
 RUN \
 	pip install --no-cache matplotlib && \
 	pip install --no-cache matplotlib_venn && \
@@ -13,7 +16,15 @@ RUN \
 	pip install --no-cache ffmpeg && \
 	pip install --no-cache pika && \
 	pip install --no-cache dash && \
-	pip install --no-cache boto3
+	pip install --no-cache boto3 && \
+	pip install --no-cache fiona
 
 
-RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/skagone/cloud-veg-et 
+ENV TONYVERS=1.0
+RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/skagone/cloud-veg-et && \
+	(cd /home/veget/cloud-veg-et/veget/vegetLib; make build-root)
+
+COPY sample_config /home/veget/cloud-veg-et/veget/api_veget/sample_config
+
+RUN apt-get install ca-certificates && mkdir -p /etc/pki/tls/certs && \
+	cp /etc/ssl/certs/ca-certificates.crt /etc/pki/tls/certs/ca-bundle.crt
