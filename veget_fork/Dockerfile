@@ -20,10 +20,11 @@ RUN \
 	pip install --no-cache fiona
 
 
-ENV TONYVERS=1.4
+ENV TONYVERS=3.7
 RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/tonybutzer/cloud-veg-et && \
 	(cd /home/veget/cloud-veg-et/veget/vegetLib; make build-root)
 
+ENV XTONYVERS=1.4
 COPY sample_config /home/veget/cloud-veg-et/veget/api_veget/sample_config
 
 RUN apt-get install ca-certificates && mkdir -p /etc/pki/tls/certs && \
