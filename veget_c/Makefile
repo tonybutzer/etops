@@ -11,3 +11,7 @@ exec:
 
 git:
 	(cd /opt/etops ; make)
+
+
+dela_logs:
+	docker run -i ${Image} python3 api_veget.py -c delaware_config -s DRB.shp lilDRB_temp

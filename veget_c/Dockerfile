@@ -22,7 +22,7 @@ RUN \
 	pip install --no-cache fiona
 
 
-ENV TONYVERS=1.8
+ENV TONYVERS=1.9
 RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/skagone/cloud-veg-et && \
 	(cd /home/veget/cloud-veg-et/veget/vegetLib; make build-root)
 
