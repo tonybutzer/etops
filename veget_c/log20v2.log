@@ -1,0 +1,1037 @@
+docker run -i tbutzer/veget_c python3 api_veget.py -c delaware_config -s DRB.shp lilDRB_temp
+2020-06-23 21:02:10,536 - BOXY_THINGYS - INFO - Logging Begins
+2020-06-23 21:02:10,537 - CLOUD_VEGET - INFO - Logging Begins
+2020-06-23 21:02:10,539 - CLOUD_VEGET - INFO - Processing Tile lilDRB_temp
+2020-06-23 21:02:10,539 - CLOUD_VEGET - ERROR - Someday tony needs to refine logging and determine a std format for ELK
+2020-06-23 21:02:10,539 - CLOUD_VEGET - ERROR - or logging agents and logging backends ... docker deployments
+2020-06-23 21:02:10,540 - VegET_CLASS - INFO - Logging Begins
+2020-06-23 21:02:10,540 - VegET_CLASS - INFO - TILE is lilDRB_temp
+2020-06-23 21:02:10,540 - VegET_CLASS - INFO - Important Config path is delaware_config
+2020-06-23 21:02:10,557 - VegET_CLASS - INFO - Important path mode is aws
+2020-06-23 21:02:10,557 - COOL RASTERMANAGER - INFO - Logging Begins
+2020-06-23 21:02:10,558 - COOL RASTERMANAGER - INFO - Tony-s stupid - tile name is - lilDRB_temp
+2020-06-23 21:02:10,558 - COOL RASTERMANAGER - INFO - temp folder is
+2020-06-23 21:02:10,558 - PATHMANAGER - INFO - Logging Begins
+2020-06-23 21:02:14,701 - VegET_CLASS - INFO - self.rmanager.normalize_to_std_grid_fast ['/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif', '/vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif']
+2020-06-23 21:02:14,701 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:02:18,859 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+2020-06-23 21:02:18,859 - COOL RASTERMANAGER - INFO - WARP - TIME - 4.158079587854445 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+2020-06-23 21:02:27,619 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+2020-06-23 21:02:27,619 - COOL RASTERMANAGER - INFO - WARP - TIME - 8.759300771169364 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+2020-06-23 21:02:36,240 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+2020-06-23 21:02:36,240 - COOL RASTERMANAGER - INFO - WARP - TIME - 8.620273708365858 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+2020-06-23 21:02:44,473 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+2020-06-23 21:02:44,473 - COOL RASTERMANAGER - INFO - WARP - TIME - 8.231451182626188 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+2020-06-23 21:02:47,724 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+2020-06-23 21:02:47,724 - COOL RASTERMANAGER - INFO - WARP - TIME - 3.2500033918768167 - /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+2020-06-23 21:02:47,724 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:02:52,821 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+2020-06-23 21:02:52,821 - COOL RASTERMANAGER - INFO - WARP - TIME - 5.096397795714438 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+2020-06-23 21:02:54,693 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+2020-06-23 21:02:54,693 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.8714938033372164 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+2020-06-23 21:02:55,273 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+2020-06-23 21:02:55,273 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5801368812099099 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+2020-06-23 21:02:56,019 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+2020-06-23 21:02:56,019 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.745180856436491 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+2020-06-23 21:02:56,767 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+2020-06-23 21:02:56,768 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7480942429974675 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+2020-06-23 21:02:57,607 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+2020-06-23 21:02:57,607 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8394908467307687 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:190: RuntimeWarning: invalid value encountered in less_equal
+  snow_melt_fac[tavg <= rf_high_thresh_temp] = melt_rate[tavg <= rf_high_thresh_temp]
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:191: RuntimeWarning: invalid value encountered in greater
+  snow_melt_fac[tavg > rf_high_thresh_temp] = 0
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:198: RuntimeWarning: invalid value encountered in less_equal
+  rain_frac[tavg <= rf_low_thresh_temp] = 0
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:199: RuntimeWarning: invalid value encountered in greater_equal
+  rain_frac[tavg >= rf_high_thresh_temp] = 1
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:200: RuntimeWarning: invalid value encountered in less
+  temp_diff_boolean = (tavg < rf_high_thresh_temp) & (tavg > rf_low_thresh_temp)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:200: RuntimeWarning: invalid value encountered in greater
+  temp_diff_boolean = (tavg < rf_high_thresh_temp) & (tavg > rf_low_thresh_temp)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:208: RuntimeWarning: invalid value encountered in less
+  SWi[SWi < 0] = np.nan
+2020-06-23 21:02:57,893 - VegET_CLASS - INFO - today is 275
+2020-06-23 21:03:02,359 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 4.4649104261770844 - out_drb_20years/swi_1999275.tif
+2020-06-23 21:03:03,950 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.5917136687785387 - out_drb_20years/snwpk_1999275.tif
+2020-06-23 21:03:05,532 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.581161793321371 - out_drb_20years/rain_1999275.tif
+2020-06-23 21:03:06,357 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8248903378844261 - out_drb_20years/swe_1999275.tif
+2020-06-23 21:03:09,346 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.988819002173841 - out_drb_20years/snowmelt_1999275.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:265: RuntimeWarning: invalid value encountered in greater_equal
+  rf_boolean = (Rf1 >= 0)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:271: RuntimeWarning: invalid value encountered in less_equal
+  SRf_boolean = (Rf <= sat_fc)
+2020-06-23 21:03:18,487 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 8.98032980505377 - out_drb_20years/dd_1999275.tif
+2020-06-23 21:03:19,305 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8178898077458143 - out_drb_20years/srf_1999275.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:312: RuntimeWarning: divide by zero encountered in true_divide
+  etasw2 = (SWi / (0.5 * self.whc)) * etasw1
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:312: RuntimeWarning: invalid value encountered in true_divide
+  etasw2 = (SWi / (0.5 * self.whc)) * etasw1
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:315: RuntimeWarning: invalid value encountered in greater
+  etasw3_boolean = SWi > (0.5 * self.whc)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:320: RuntimeWarning: invalid value encountered in greater
+  etasw4_boolean = (etasw3 > SWi)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:325: RuntimeWarning: invalid value encountered in greater
+  etasw5_boolean = (etasw4 > self.whc)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:354: RuntimeWarning: invalid value encountered in greater
+  netet_boolean = netet1 > 0
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:360: RuntimeWarning: invalid value encountered in greater
+  SWf_boolean = (SWi > self.whc)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:361: RuntimeWarning: invalid value encountered in less
+  SWf_boolean2 = (SWf1 < 0.0)
+2020-06-23 21:03:20,910 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1228378936648369 - out_drb_20years/etasw_1999275.tif
+2020-06-23 21:03:21,911 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.000009711831808 - out_drb_20years/swf_1999275.tif
+2020-06-23 21:03:23,459 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.5479935593903065 - out_drb_20years/etasw5_1999275.tif
+2020-06-23 21:03:24,632 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1731692170724273 - out_drb_20years/etc_1999275.tif
+2020-06-23 21:03:25,519 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8861069474369287 - out_drb_20years/netet_1999275.tif
+2020-06-23 21:03:25,522 - VegET_CLASS - INFO - DAY - TIME - 37.7979597998783 - 1999-10-02 00:00:00
+2020-06-23 21:03:25,524 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:03:32,637 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+2020-06-23 21:03:32,637 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.113131886348128 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+2020-06-23 21:03:34,991 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+2020-06-23 21:03:34,991 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.353516334667802 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+2020-06-23 21:03:35,622 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+2020-06-23 21:03:35,623 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6317371185868979 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+2020-06-23 21:03:36,355 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+2020-06-23 21:03:36,355 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7313092863187194 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+2020-06-23 21:03:37,005 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+2020-06-23 21:03:37,006 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6503921579569578 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+2020-06-23 21:03:37,744 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+2020-06-23 21:03:37,745 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7387387556955218 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:217: RuntimeWarning: invalid value encountered in less_equal
+  rain_frac[tavg <= rf_low_thresh_temp] = 0
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:218: RuntimeWarning: invalid value encountered in greater_equal
+  rain_frac[tavg >= rf_high_thresh_temp] = 1
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:219: RuntimeWarning: invalid value encountered in less
+  temp_diff_boolean = (tavg < rf_high_thresh_temp) & (tavg > rf_low_thresh_temp)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:219: RuntimeWarning: invalid value encountered in greater
+  temp_diff_boolean = (tavg < rf_high_thresh_temp) & (tavg > rf_low_thresh_temp)
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:228: RuntimeWarning: invalid value encountered in less_equal
+  snow_melt_boolean = (melt_rate <= (SWE + yest_snwpck))
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:236: RuntimeWarning: invalid value encountered in less
+  SNWpk[SNWpk1 < 0] = 0
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:237: RuntimeWarning: invalid value encountered in greater_equal
+  SNWpk[SNWpk1 >= 0] = SNWpk1[SNWpk1 >= 0]
+2020-06-23 21:03:38,143 - VegET_CLASS - INFO - today is 276
+2020-06-23 21:03:39,070 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9266633046790957 - out_drb_20years/swi_1999276.tif
+2020-06-23 21:03:39,855 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7850674716755748 - out_drb_20years/snwpk_1999276.tif
+2020-06-23 21:03:47,628 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 7.772474271245301 - out_drb_20years/rain_1999276.tif
+2020-06-23 21:03:48,929 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.300686964765191 - out_drb_20years/swe_1999276.tif
+2020-06-23 21:03:49,868 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9392793430015445 - out_drb_20years/snowmelt_1999276.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:256: RuntimeWarning: invalid value encountered in less
+  saturation[saturation < 0] = np.nan
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:257: RuntimeWarning: invalid value encountered in less
+  field_capacity[field_capacity < 0] = np.nan
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:258: RuntimeWarning: invalid value encountered in less
+  whc[whc < 0] = np.nan
+2020-06-23 21:03:50,906 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8932284964248538 - out_drb_20years/dd_1999276.tif
+2020-06-23 21:03:51,955 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0490009849891067 - out_drb_20years/srf_1999276.tif
+2020-06-23 21:03:53,671 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2134300470352173 - out_drb_20years/etasw_1999276.tif
+2020-06-23 21:03:54,673 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0013855993747711 - out_drb_20years/swf_1999276.tif
+2020-06-23 21:03:55,546 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8725466160103679 - out_drb_20years/etasw5_1999276.tif
+2020-06-23 21:03:56,548 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0020141899585724 - out_drb_20years/etc_1999276.tif
+2020-06-23 21:03:57,482 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9338703481480479 - out_drb_20years/netet_1999276.tif
+2020-06-23 21:03:57,808 - VegET_CLASS - INFO - DAY - TIME - 32.285472666844726 - 1999-10-03 00:00:00
+2020-06-23 21:03:57,811 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:04:05,536 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+2020-06-23 21:04:05,536 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.7253428949043155 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+2020-06-23 21:04:07,620 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+2020-06-23 21:04:07,620 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.083090695552528 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+2020-06-23 21:04:08,183 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+2020-06-23 21:04:08,183 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5632106568664312 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+2020-06-23 21:04:09,047 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+2020-06-23 21:04:09,047 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8636439442634583 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+2020-06-23 21:04:09,753 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+2020-06-23 21:04:09,753 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7049321876838803 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+2020-06-23 21:04:10,659 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+2020-06-23 21:04:10,660 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9065516889095306 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+2020-06-23 21:04:11,068 - VegET_CLASS - INFO - today is 277
+2020-06-23 21:04:12,137 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.068477662280202 - out_drb_20years/swi_1999277.tif
+2020-06-23 21:04:13,152 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0141718331724405 - out_drb_20years/snwpk_1999277.tif
+2020-06-23 21:04:13,978 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8257798412814736 - out_drb_20years/rain_1999277.tif
+2020-06-23 21:04:14,819 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8411681074649096 - out_drb_20years/swe_1999277.tif
+2020-06-23 21:04:15,621 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8017081376165152 - out_drb_20years/snowmelt_1999277.tif
+2020-06-23 21:04:23,477 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 7.71143254917115 - out_drb_20years/dd_1999277.tif
+2020-06-23 21:04:24,399 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9218118479475379 - out_drb_20years/srf_1999277.tif
+2020-06-23 21:04:25,848 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9666592422872782 - out_drb_20years/etasw_1999277.tif
+2020-06-23 21:04:26,691 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8422322859987617 - out_drb_20years/swf_1999277.tif
+2020-06-23 21:04:27,690 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9984526885673404 - out_drb_20years/etasw5_1999277.tif
+2020-06-23 21:04:28,637 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9462402733042836 - out_drb_20years/etc_1999277.tif
+2020-06-23 21:04:29,502 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8652035482227802 - out_drb_20years/netet_1999277.tif
+2020-06-23 21:04:29,601 - VegET_CLASS - INFO - DAY - TIME - 31.792477807961404 - 1999-10-04 00:00:00
+2020-06-23 21:04:29,603 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:04:36,593 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+2020-06-23 21:04:36,593 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.99017446488142 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+2020-06-23 21:04:38,932 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+2020-06-23 21:04:38,932 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.3383323112502694 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+2020-06-23 21:04:39,360 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+2020-06-23 21:04:39,360 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.42769311740994453 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+2020-06-23 21:04:40,247 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+2020-06-23 21:04:40,248 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8873797273263335 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+2020-06-23 21:04:40,966 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+2020-06-23 21:04:40,967 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7187722800299525 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+2020-06-23 21:04:41,769 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+2020-06-23 21:04:41,769 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8019756777212024 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+2020-06-23 21:04:42,176 - VegET_CLASS - INFO - today is 278
+2020-06-23 21:04:43,023 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8471671566367149 - out_drb_20years/swi_1999278.tif
+2020-06-23 21:04:43,991 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9676112914457917 - out_drb_20years/snwpk_1999278.tif
+2020-06-23 21:04:44,887 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8952455837279558 - out_drb_20years/rain_1999278.tif
+2020-06-23 21:04:45,897 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0101178819313645 - out_drb_20years/swe_1999278.tif
+2020-06-23 21:04:46,751 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.853680512867868 - out_drb_20years/snowmelt_1999278.tif
+2020-06-23 21:04:47,837 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9406281607225537 - out_drb_20years/dd_1999278.tif
+2020-06-23 21:04:48,693 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8556184889748693 - out_drb_20years/srf_1999278.tif
+2020-06-23 21:04:53,697 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 4.4989188481122255 - out_drb_20years/etasw_1999278.tif
+2020-06-23 21:04:55,022 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3241428090259433 - out_drb_20years/swf_1999278.tif
+2020-06-23 21:04:56,458 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.4360696114599705 - out_drb_20years/etasw5_1999278.tif
+2020-06-23 21:04:57,380 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9216182716190815 - out_drb_20years/etc_1999278.tif
+2020-06-23 21:04:59,308 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.927645600400865 - out_drb_20years/netet_1999278.tif
+2020-06-23 21:04:59,419 - VegET_CLASS - INFO - DAY - TIME - 29.818221805617213 - 1999-10-05 00:00:00
+2020-06-23 21:04:59,422 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:05:07,115 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif
+2020-06-23 21:05:07,115 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.693287062458694 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif
+2020-06-23 21:05:09,289 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+2020-06-23 21:05:09,289 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.173881359398365 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+2020-06-23 21:05:09,731 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+2020-06-23 21:05:09,731 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4416881315410137 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+2020-06-23 21:05:10,712 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+2020-06-23 21:05:10,713 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9808773314580321 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+2020-06-23 21:05:11,459 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+2020-06-23 21:05:11,459 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7465111296623945 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+2020-06-23 21:05:12,270 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+2020-06-23 21:05:12,270 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8099014451727271 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+2020-06-23 21:05:12,690 - VegET_CLASS - INFO - today is 279
+2020-06-23 21:05:13,651 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9606567695736885 - out_drb_20years/swi_1999279.tif
+2020-06-23 21:05:15,000 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3484862968325615 - out_drb_20years/snwpk_1999279.tif
+2020-06-23 21:05:16,669 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.6682435926049948 - out_drb_20years/rain_1999279.tif
+2020-06-23 21:05:17,981 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3111963821575046 - out_drb_20years/swe_1999279.tif
+2020-06-23 21:05:19,922 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.940838124603033 - out_drb_20years/snowmelt_1999279.tif
+2020-06-23 21:05:22,357 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.288719318807125 - out_drb_20years/dd_1999279.tif
+2020-06-23 21:05:23,412 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0548704219982028 - out_drb_20years/srf_1999279.tif
+2020-06-23 21:05:24,815 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9100494487211108 - out_drb_20years/etasw_1999279.tif
+2020-06-23 21:05:25,724 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.908695905469358 - out_drb_20years/swf_1999279.tif
+2020-06-23 21:05:26,827 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1022437000647187 - out_drb_20years/etasw5_1999279.tif
+2020-06-23 21:05:27,945 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1178977340459824 - out_drb_20years/etc_1999279.tif
+2020-06-23 21:05:28,981 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0357718048617244 - out_drb_20years/netet_1999279.tif
+2020-06-23 21:05:29,086 - VegET_CLASS - INFO - DAY - TIME - 29.666544659994543 - 1999-10-06 00:00:00
+2020-06-23 21:05:29,088 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:05:38,490 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+2020-06-23 21:05:38,490 - COOL RASTERMANAGER - INFO - WARP - TIME - 9.402255400083959 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+2020-06-23 21:05:41,616 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+2020-06-23 21:05:41,616 - COOL RASTERMANAGER - INFO - WARP - TIME - 3.1249704267829657 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+2020-06-23 21:05:42,203 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+2020-06-23 21:05:42,204 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5874332757666707 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+2020-06-23 21:05:43,433 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+2020-06-23 21:05:43,433 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.2289529768750072 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+2020-06-23 21:05:44,320 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+2020-06-23 21:05:44,321 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8871538266539574 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+2020-06-23 21:05:45,496 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+2020-06-23 21:05:45,496 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.1756413877010345 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+2020-06-23 21:05:45,925 - VegET_CLASS - INFO - today is 280
+2020-06-23 21:05:46,925 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.00030573643744 - out_drb_20years/swi_1999280.tif
+2020-06-23 21:05:52,916 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 5.990004741586745 - out_drb_20years/snwpk_1999280.tif
+2020-06-23 21:05:53,944 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.02849358972162 - out_drb_20years/rain_1999280.tif
+2020-06-23 21:05:54,816 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8715349780395627 - out_drb_20years/swe_1999280.tif
+2020-06-23 21:05:55,771 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9540895344689488 - out_drb_20years/snowmelt_1999280.tif
+2020-06-23 21:05:56,769 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8541055712848902 - out_drb_20years/dd_1999280.tif
+2020-06-23 21:06:15,616 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 18.846462457440794 - out_drb_20years/srf_1999280.tif
+2020-06-23 21:06:17,285 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0488714519888163 - out_drb_20years/etasw_1999280.tif
+2020-06-23 21:06:18,152 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8664758019149303 - out_drb_20years/swf_1999280.tif
+2020-06-23 21:06:19,113 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9610923286527395 - out_drb_20years/etasw5_1999280.tif
+2020-06-23 21:06:20,091 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9776306813582778 - out_drb_20years/etc_1999280.tif
+2020-06-23 21:06:20,918 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8270224183797836 - out_drb_20years/netet_1999280.tif
+2020-06-23 21:06:21,036 - VegET_CLASS - INFO - DAY - TIME - 51.94924869015813 - 1999-10-07 00:00:00
+2020-06-23 21:06:21,037 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:06:28,499 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+2020-06-23 21:06:28,499 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.462403479963541 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+2020-06-23 21:06:30,422 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+2020-06-23 21:06:30,422 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9219731474295259 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+2020-06-23 21:06:31,046 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+2020-06-23 21:06:31,046 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6233821101486683 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+2020-06-23 21:06:31,786 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+2020-06-23 21:06:31,787 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7405163198709488 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+2020-06-23 21:06:32,533 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+2020-06-23 21:06:32,534 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7465908071026206 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+2020-06-23 21:06:33,254 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+2020-06-23 21:06:33,254 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7203322453424335 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+2020-06-23 21:06:33,666 - VegET_CLASS - INFO - today is 281
+2020-06-23 21:06:34,685 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0190574321895838 - out_drb_20years/swi_1999281.tif
+2020-06-23 21:06:35,546 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8598052449524403 - out_drb_20years/snwpk_1999281.tif
+2020-06-23 21:06:36,414 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8677759002894163 - out_drb_20years/rain_1999281.tif
+2020-06-23 21:06:37,999 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.5854550525546074 - out_drb_20years/swe_1999281.tif
+2020-06-23 21:06:38,862 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8628871012479067 - out_drb_20years/snowmelt_1999281.tif
+2020-06-23 21:06:39,754 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7564294068142772 - out_drb_20years/dd_1999281.tif
+2020-06-23 21:06:40,679 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.925216443836689 - out_drb_20years/srf_1999281.tif
+2020-06-23 21:06:42,238 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0722843147814274 - out_drb_20years/etasw_1999281.tif
+2020-06-23 21:06:43,098 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8591804718598723 - out_drb_20years/swf_1999281.tif
+2020-06-23 21:06:44,165 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0675747264176607 - out_drb_20years/etasw5_1999281.tif
+2020-06-23 21:06:45,116 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.95033526327461 - out_drb_20years/etc_1999281.tif
+2020-06-23 21:06:46,212 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.095386866480112 - out_drb_20years/netet_1999281.tif
+2020-06-23 21:06:46,318 - VegET_CLASS - INFO - DAY - TIME - 25.282654967159033 - 1999-10-08 00:00:00
+2020-06-23 21:06:46,320 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:06:53,037 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+2020-06-23 21:06:53,037 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.717713243328035 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+2020-06-23 21:06:55,190 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+2020-06-23 21:06:55,190 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.1524189384654164 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+2020-06-23 21:06:55,626 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+2020-06-23 21:06:55,626 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.43551324121654034 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+2020-06-23 21:06:56,604 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+2020-06-23 21:06:56,604 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9777193972840905 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+2020-06-23 21:06:57,294 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+2020-06-23 21:06:57,294 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6895748348906636 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+2020-06-23 21:06:57,923 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+2020-06-23 21:06:57,924 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6292232042178512 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+2020-06-23 21:06:58,329 - VegET_CLASS - INFO - today is 282
+2020-06-23 21:06:59,229 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8996665291488171 - out_drb_20years/swi_1999282.tif
+2020-06-23 21:07:02,589 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 3.3593738842755556 - out_drb_20years/snwpk_1999282.tif
+2020-06-23 21:07:03,528 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9391435878351331 - out_drb_20years/rain_1999282.tif
+2020-06-23 21:07:04,374 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8456183252856135 - out_drb_20years/swe_1999282.tif
+2020-06-23 21:07:06,926 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.551097160205245 - out_drb_20years/snowmelt_1999282.tif
+2020-06-23 21:07:08,165 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1081097722053528 - out_drb_20years/dd_1999282.tif
+2020-06-23 21:07:09,007 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8416837872937322 - out_drb_20years/srf_1999282.tif
+2020-06-23 21:07:10,533 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9900360591709614 - out_drb_20years/etasw_1999282.tif
+2020-06-23 21:07:11,714 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.181047915481031 - out_drb_20years/swf_1999282.tif
+2020-06-23 21:07:12,561 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8460324686020613 - out_drb_20years/etasw5_1999282.tif
+2020-06-23 21:07:13,536 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.975410396233201 - out_drb_20years/etc_1999282.tif
+2020-06-23 21:07:14,401 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8649566490203142 - out_drb_20years/netet_1999282.tif
+2020-06-23 21:07:14,497 - VegET_CLASS - INFO - DAY - TIME - 28.178014976903796 - 1999-10-09 00:00:00
+2020-06-23 21:07:14,498 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:07:20,811 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+2020-06-23 21:07:20,811 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.313325793482363 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+2020-06-23 21:07:22,579 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+2020-06-23 21:07:22,579 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.7672783359885216 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+2020-06-23 21:07:22,989 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+2020-06-23 21:07:22,989 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.41030455846339464 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+2020-06-23 21:07:23,719 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+2020-06-23 21:07:23,720 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7298575229942799 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+2020-06-23 21:07:24,526 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+2020-06-23 21:07:24,526 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.805791256017983 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+2020-06-23 21:07:25,320 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+2020-06-23 21:07:25,320 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7935996996238828 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+2020-06-23 21:07:25,736 - VegET_CLASS - INFO - today is 283
+2020-06-23 21:07:26,716 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9800769109278917 - out_drb_20years/swi_1999283.tif
+2020-06-23 21:07:27,712 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9956289492547512 - out_drb_20years/snwpk_1999283.tif
+2020-06-23 21:07:28,834 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.12124103307724 - out_drb_20years/rain_1999283.tif
+2020-06-23 21:07:29,918 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0843158094212413 - out_drb_20years/swe_1999283.tif
+2020-06-23 21:07:30,771 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8528653550893068 - out_drb_20years/snowmelt_1999283.tif
+2020-06-23 21:07:31,853 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9381652316078544 - out_drb_20years/dd_1999283.tif
+2020-06-23 21:07:32,765 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9122776696458459 - out_drb_20years/srf_1999283.tif
+configdir delaware_config
+tile ['lilDRB_temp']
+shp DRB.shp
+Using config_dict dir delaware_config to process tile lilDRB_temp
+------------------------------------------------------------------------------------------
+             _ _            ___  ___  _  _ 
+            | | | ___  ___ | __>|_ _|| || |
+            | ' |/ ._>/ . || _>  | | |_/|_/
+            |__/ \___.\_. ||___> |_| <_><_>
+                       <___'                
+1999-10-02 00:00:00
+2019-12-31 00:00:00
+7395
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+data shape = (3116, 1941)
+1999 10 2
+today is 275
+swout swi_1999275.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+data shape = (3116, 1941)
+1999 10 3
+today is 276
+swout swi_1999276.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+data shape = (3116, 1941)
+1999 10 4
+today is 277
+swout swi_1999277.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+data shape = (3116, 1941)
+1999 10 5
+today is 278
+swout swi_1999278.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+data shape = (3116, 1941)
+1999 10 6
+today is 279
+swout swi_1999279.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+data shape = (3116, 1941)
+1999 10 7
+today is 280
+swout swi_1999280.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+data shape = (3116, 1941)
+1999 10 8
+today is 281
+swout swi_1999281.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+data shape = (3116, 1941)
+1999 10 9
+today is 282
+swout swi_1999282.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+data shape = (3116, 1941)
+1999 10 10
+today is 283
+swout swi_1999283.tif
+(3116, 1941)2020-06-23 21:07:36,021 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.7580313961952925 - out_drb_20years/etasw_1999283.tif
+2020-06-23 21:07:36,992 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9705778565257788 - out_drb_20years/swf_1999283.tif
+2020-06-23 21:07:39,221 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.228224780410528 - out_drb_20years/etasw5_1999283.tif
+2020-06-23 21:07:40,074 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8535116910934448 - out_drb_20years/etc_1999283.tif
+2020-06-23 21:07:40,826 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7514561014249921 - out_drb_20years/netet_1999283.tif
+2020-06-23 21:07:40,933 - VegET_CLASS - INFO - DAY - TIME - 26.435733506456017 - 1999-10-10 00:00:00
+2020-06-23 21:07:40,933 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:07:49,825 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+2020-06-23 21:07:49,825 - COOL RASTERMANAGER - INFO - WARP - TIME - 8.892318080179393 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+2020-06-23 21:07:52,120 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+2020-06-23 21:07:52,121 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.29458839725703 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+2020-06-23 21:07:52,617 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+2020-06-23 21:07:52,617 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.49647183902561665 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+2020-06-23 21:07:53,310 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+2020-06-23 21:07:53,310 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6920784320682287 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+2020-06-23 21:07:54,023 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+2020-06-23 21:07:54,023 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7133475933223963 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+2020-06-23 21:07:55,251 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+2020-06-23 21:07:55,251 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.2277338188141584 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+2020-06-23 21:07:55,679 - VegET_CLASS - INFO - today is 284
+2020-06-23 21:07:57,081 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.4018857777118683 - out_drb_20years/swi_1999284.tif
+2020-06-23 21:07:58,032 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9507804326713085 - out_drb_20years/snwpk_1999284.tif
+2020-06-23 21:08:03,874 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 5.841067962348461 - out_drb_20years/rain_1999284.tif
+2020-06-23 21:08:04,785 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9113902384415269 - out_drb_20years/swe_1999284.tif
+2020-06-23 21:08:05,686 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.899604975245893 - out_drb_20years/snowmelt_1999284.tif
+2020-06-23 21:08:08,632 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.808291656896472 - out_drb_20years/dd_1999284.tif
+2020-06-23 21:08:09,716 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0837257402017713 - out_drb_20years/srf_1999284.tif
+2020-06-23 21:08:11,092 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8687920914962888 - out_drb_20years/etasw_1999284.tif
+2020-06-23 21:08:11,888 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7962817205116153 - out_drb_20years/swf_1999284.tif
+2020-06-23 21:08:12,824 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.93497459217906 - out_drb_20years/etasw5_1999284.tif
+2020-06-23 21:08:13,774 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9503856031224132 - out_drb_20years/etc_1999284.tif
+2020-06-23 21:08:18,890 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 5.115571362897754 - out_drb_20years/netet_1999284.tif
+2020-06-23 21:08:19,002 - VegET_CLASS - INFO - DAY - TIME - 38.06873475201428 - 1999-10-11 00:00:00
+2020-06-23 21:08:19,002 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:08:26,423 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+2020-06-23 21:08:26,423 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.421272529289126 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+2020-06-23 21:08:28,444 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+2020-06-23 21:08:28,444 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.020239111967385 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+2020-06-23 21:08:28,858 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+2020-06-23 21:08:28,858 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4138099644333124 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+2020-06-23 21:08:29,411 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+2020-06-23 21:08:29,411 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5521800294518471 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+2020-06-23 21:08:30,245 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+2020-06-23 21:08:30,246 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8343941494822502 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+2020-06-23 21:08:31,037 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+2020-06-23 21:08:31,037 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7909176619723439 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+2020-06-23 21:08:31,446 - VegET_CLASS - INFO - today is 285
+2020-06-23 21:08:33,200 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.7534453347325325 - out_drb_20years/swi_1999285.tif
+2020-06-23 21:08:34,168 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9676448330283165 - out_drb_20years/snwpk_1999285.tif
+2020-06-23 21:08:35,124 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9557886468246579 - out_drb_20years/rain_1999285.tif
+2020-06-23 21:08:36,101 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9763498678803444 - out_drb_20years/swe_1999285.tif
+2020-06-23 21:08:37,017 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9161132136359811 - out_drb_20years/snowmelt_1999285.tif
+2020-06-23 21:08:38,116 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9575253436341882 - out_drb_20years/dd_1999285.tif
+2020-06-23 21:08:40,995 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.879473838955164 - out_drb_20years/srf_1999285.tif
+2020-06-23 21:08:42,462 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9465007511898875 - out_drb_20years/etasw_1999285.tif
+2020-06-23 21:08:43,502 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0400205934420228 - out_drb_20years/swf_1999285.tif
+2020-06-23 21:08:44,414 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9109242297708988 - out_drb_20years/etasw5_1999285.tif
+2020-06-23 21:08:45,298 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.883962856605649 - out_drb_20years/etc_1999285.tif
+2020-06-23 21:08:46,383 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0850669629871845 - out_drb_20years/netet_1999285.tif
+2020-06-23 21:08:46,488 - VegET_CLASS - INFO - DAY - TIME - 27.486537797376513 - 1999-10-12 00:00:00
+2020-06-23 21:08:46,489 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:08:53,750 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+2020-06-23 21:08:53,750 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.26156891323626 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+2020-06-23 21:08:56,100 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+2020-06-23 21:08:56,100 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.3492690213024616 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+2020-06-23 21:08:56,601 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+2020-06-23 21:08:56,601 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5006778659299016 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+2020-06-23 21:08:57,390 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+2020-06-23 21:08:57,390 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7885937513783574 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+2020-06-23 21:08:58,304 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+2020-06-23 21:08:58,304 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9137752195820212 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+2020-06-23 21:08:59,261 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+2020-06-23 21:08:59,261 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9561457745730877 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+2020-06-23 21:08:59,860 - VegET_CLASS - INFO - today is 286
+2020-06-23 21:09:00,957 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0960820643231273 - out_drb_20years/swi_1999286.tif
+2020-06-23 21:09:03,316 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.359346673823893 - out_drb_20years/snwpk_1999286.tif
+2020-06-23 21:09:06,232 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.915042635984719 - out_drb_20years/rain_1999286.tif
+2020-06-23 21:09:07,135 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9034181097522378 - out_drb_20years/swe_1999286.tif
+2020-06-23 21:09:12,909 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 5.773779371753335 - out_drb_20years/snowmelt_1999286.tif
+2020-06-23 21:09:18,259 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 5.200879793614149 - out_drb_20years/dd_1999286.tif
+2020-06-23 21:09:19,504 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2451556893065572 - out_drb_20years/srf_1999286.tif
+2020-06-23 21:09:20,858 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8485001968219876 - out_drb_20years/etasw_1999286.tif
+2020-06-23 21:09:22,098 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2396125942468643 - out_drb_20years/swf_1999286.tif
+2020-06-23 21:09:23,433 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.334626846946776 - out_drb_20years/etasw5_1999286.tif
+2020-06-23 21:09:24,361 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9269995326176286 - out_drb_20years/etc_1999286.tif
+2020-06-23 21:09:25,477 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1163494801148772 - out_drb_20years/netet_1999286.tif
+2020-06-23 21:09:25,584 - VegET_CLASS - INFO - DAY - TIME - 39.09475663397461 - 1999-10-13 00:00:00
+2020-06-23 21:09:25,584 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:09:32,475 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+2020-06-23 21:09:32,475 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.8913081753998995 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+2020-06-23 21:09:34,463 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+2020-06-23 21:09:34,463 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9870313750579953 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+2020-06-23 21:09:34,901 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+2020-06-23 21:09:34,901 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.43762596137821674 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+2020-06-23 21:09:35,570 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+2020-06-23 21:09:35,570 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6689936472103 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+2020-06-23 21:09:36,363 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+2020-06-23 21:09:36,363 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7927249483764172 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+2020-06-23 21:09:37,023 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+2020-06-23 21:09:37,023 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6593907009810209 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+2020-06-23 21:09:37,453 - VegET_CLASS - INFO - today is 287
+2020-06-23 21:09:38,345 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8920840471982956 - out_drb_20years/swi_1999287.tif
+2020-06-23 21:09:39,199 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8536769915372133 - out_drb_20years/snwpk_1999287.tif
+2020-06-23 21:09:40,079 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8788807233795524 - out_drb_20years/rain_1999287.tif
+2020-06-23 21:09:40,949 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8699589436873794 - out_drb_20years/swe_1999287.tif
+2020-06-23 21:09:41,848 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.89915163628757 - out_drb_20years/snowmelt_1999287.tif
+2020-06-23 21:09:43,455 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.4614995373412967 - out_drb_20years/dd_1999287.tif
+2020-06-23 21:09:44,793 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.337624709121883 - out_drb_20years/srf_1999287.tif
+2020-06-23 21:09:46,211 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9239759631454945 - out_drb_20years/etasw_1999287.tif
+2020-06-23 21:09:47,061 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.849880876019597 - out_drb_20years/swf_1999287.tif
+2020-06-23 21:09:47,990 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.928346361964941 - out_drb_20years/etasw5_1999287.tif
+2020-06-23 21:09:49,035 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.045002717524767 - out_drb_20years/etc_1999287.tif
+2020-06-23 21:09:49,957 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9217558484524488 - out_drb_20years/netet_1999287.tif
+2020-06-23 21:09:50,069 - VegET_CLASS - INFO - DAY - TIME - 24.48480697348714 - 1999-10-14 00:00:00
+2020-06-23 21:09:50,069 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:09:57,783 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+2020-06-23 21:09:57,783 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.714366894215345 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+2020-06-23 21:10:00,011 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+2020-06-23 21:10:00,011 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.226755551993847 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+2020-06-23 21:10:00,511 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+2020-06-23 21:10:00,511 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5001451978459954 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+2020-06-23 21:10:01,212 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif
+2020-06-23 21:10:01,212 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7005111835896969 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif
+2020-06-23 21:10:02,311 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+2020-06-23 21:10:02,312 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.0993062211200595 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+2020-06-23 21:10:03,185 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+2020-06-23 21:10:03,185 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8731094747781754 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+2020-06-23 21:10:03,585 - VegET_CLASS - INFO - today is 288
+2020-06-23 21:10:04,589 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0031968737021089 - out_drb_20years/swi_1999288.tif
+2020-06-23 21:10:05,602 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.012850963510573 - out_drb_20years/snwpk_1999288.tif
+2020-06-23 21:10:06,567 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9649116480723023 - out_drb_20years/rain_1999288.tif
+2020-06-23 21:10:07,867 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2995838997885585 - out_drb_20years/swe_1999288.tif
+2020-06-23 21:10:08,739 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8717271070927382 - out_drb_20years/snowmelt_1999288.tif
+2020-06-23 21:10:09,886 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9990613795816898 - out_drb_20years/dd_1999288.tif
+2020-06-23 21:10:10,747 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8607227560132742 - out_drb_20years/srf_1999288.tif
+2020-06-23 21:10:12,141 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8921711565926671 - out_drb_20years/etasw_1999288.tif
+2020-06-23 21:10:14,187 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.0464984448626637 - out_drb_20years/swf_1999288.tif
+2020-06-23 21:10:15,290 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.1018030047416687 - out_drb_20years/etasw5_1999288.tif
+2020-06-23 21:10:16,286 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9960575755685568 - out_drb_20years/etc_1999288.tif
+2020-06-23 21:10:17,298 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0119509035721421 - out_drb_20years/netet_1999288.tif
+2020-06-23 21:10:17,401 - VegET_CLASS - INFO - DAY - TIME - 27.33240348380059 - 1999-10-15 00:00:00
+2020-06-23 21:10:17,403 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:10:24,623 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+2020-06-23 21:10:24,623 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.220062085427344 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+2020-06-23 21:10:27,113 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+2020-06-23 21:10:27,113 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.489136883057654 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+2020-06-23 21:10:27,697 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+2020-06-23 21:10:27,697 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5843884954228997 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+2020-06-23 21:10:28,377 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+2020-06-23 21:10:28,377 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6795254368335009 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+2020-06-23 21:10:29,107 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+2020-06-23 21:10:29,107 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7293173093348742 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+2020-06-23 21:10:29,889 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+2020-06-23 21:10:29,889 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7815750539302826 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+2020-06-23 21:10:30,305 - VegET_CLASS - INFO - today is 289
+2020-06-23 21:10:31,290 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9853012030944228 - out_drb_20years/swi_1999289.tif
+2020-06-23 21:10:32,077 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7863511266186833 - out_drb_20years/snwpk_1999289.tif
+2020-06-23 21:10:33,171 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0938818091526628 - out_drb_20years/rain_1999289.tif
+2020-06-23 21:10:33,974 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8031401308253407 - out_drb_20years/swe_1999289.tif
+2020-06-23 21:10:35,223 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2488920697942376 - out_drb_20years/snowmelt_1999289.tif
+2020-06-23 21:10:36,231 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8661515153944492 - out_drb_20years/dd_1999289.tif
+2020-06-23 21:10:37,786 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.5537750367075205 - out_drb_20years/srf_1999289.tif
+2020-06-23 21:10:40,306 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.9809517916291952 - out_drb_20years/etasw_1999289.tif
+2020-06-23 21:10:41,289 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9832440000027418 - out_drb_20years/swf_1999289.tif
+2020-06-23 21:10:42,730 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.4410345191136003 - out_drb_20years/etasw5_1999289.tif
+2020-06-23 21:10:44,975 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.2439435496926308 - out_drb_20years/etc_1999289.tif
+2020-06-23 21:10:45,870 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8946877429261804 - out_drb_20years/netet_1999289.tif
+2020-06-23 21:10:45,976 - VegET_CLASS - INFO - DAY - TIME - 28.57433789782226 - 1999-10-16 00:00:00
+2020-06-23 21:10:45,977 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:10:53,074 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+2020-06-23 21:10:53,074 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.09726720303297 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+2020-06-23 21:10:55,678 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+2020-06-23 21:10:55,678 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.6035437090322375 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+2020-06-23 21:10:56,202 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+2020-06-23 21:10:56,203 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5238721994683146 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+2020-06-23 21:10:57,041 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+2020-06-23 21:10:57,042 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8384467512369156 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+2020-06-23 21:10:57,839 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+2020-06-23 21:10:57,839 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7972435727715492 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+2020-06-23 21:10:58,773 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+2020-06-23 21:10:58,774 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9340271754190326 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+2020-06-23 21:10:59,207 - VegET_CLASS - INFO - today is 290
+2020-06-23 21:11:00,143 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9362006690353155 - out_drb_20years/swi_1999290.tif
+2020-06-23 21:11:00,935 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7914122520014644 - out_drb_20years/snwpk_1999290.tif
+2020-06-23 21:11:04,562 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 3.6270149499177933 - out_drb_20years/rain_1999290.tif
+2020-06-23 21:11:06,548 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.9854612313210964 - out_drb_20years/swe_1999290.tif
+2020-06-23 21:11:07,510 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9623441835865378 - out_drb_20years/snowmelt_1999290.tif
+2020-06-23 21:11:08,467 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8132109064608812 - out_drb_20years/dd_1999290.tif
+2020-06-23 21:11:09,307 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8396060699597001 - out_drb_20years/srf_1999290.tif
+2020-06-23 21:11:11,010 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.16052501834929 - out_drb_20years/etasw_1999290.tif
+2020-06-23 21:11:12,206 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.195711855776608 - out_drb_20years/swf_1999290.tif
+2020-06-23 21:11:13,989 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.7833606768399477 - out_drb_20years/etasw5_1999290.tif
+2020-06-23 21:11:14,995 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0056700510904193 - out_drb_20years/etc_1999290.tif
+2020-06-23 21:11:15,913 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9176591970026493 - out_drb_20years/netet_1999290.tif
+2020-06-23 21:11:16,010 - VegET_CLASS - INFO - DAY - TIME - 30.03417494520545 - 1999-10-17 00:00:00
+2020-06-23 21:11:16,011 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:11:22,727 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+2020-06-23 21:11:22,727 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.715946228243411 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+2020-06-23 21:11:24,712 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+2020-06-23 21:11:24,712 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9840683918446302 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+2020-06-23 21:11:25,123 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+2020-06-23 21:11:25,123 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4105672659352422 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+2020-06-23 21:11:25,940 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+2020-06-23 21:11:25,940 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8172000478953123 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+2020-06-23 21:11:26,685 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+2020-06-23 21:11:26,685 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7442513033747673 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+2020-06-23 21:11:27,411 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+2020-06-23 21:11:27,411 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7256825398653746 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+2020-06-23 21:11:27,809 - VegET_CLASS - INFO - today is 291
+2020-06-23 21:11:28,774 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9650647891685367 - out_drb_20years/swi_1999291.tif
+2020-06-23 21:11:29,480 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7052326155826449 - out_drb_20years/snwpk_1999291.tif
+2020-06-23 21:11:30,434 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9539693845435977 - out_drb_20years/rain_1999291.tif
+2020-06-23 21:11:31,372 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9379889881238341 - out_drb_20years/swe_1999291.tif
+2020-06-23 21:11:32,284 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9111084248870611 - out_drb_20years/snowmelt_1999291.tif
+2020-06-23 21:11:35,053 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.6191740725189447 - out_drb_20years/dd_1999291.tif
+2020-06-23 21:11:35,942 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8889894038438797 - out_drb_20years/srf_1999291.tif
+2020-06-23 21:11:38,528 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.083141972310841 - out_drb_20years/etasw_1999291.tif
+2020-06-23 21:11:39,548 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0195486629381776 - out_drb_20years/swf_1999291.tif
+2020-06-23 21:11:41,274 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.725980194285512 - out_drb_20years/etasw5_1999291.tif
+2020-06-23 21:11:42,497 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2224450586363673 - out_drb_20years/etc_1999291.tif
+2020-06-23 21:11:45,163 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.6652888525277376 - out_drb_20years/netet_1999291.tif
+2020-06-23 21:11:45,266 - VegET_CLASS - INFO - DAY - TIME - 29.255542648024857 - 1999-10-18 00:00:00
+2020-06-23 21:11:45,267 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:11:51,942 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+2020-06-23 21:11:51,942 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.675725909881294 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+2020-06-23 21:11:53,903 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+2020-06-23 21:11:53,904 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.960801943205297 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+2020-06-23 21:11:54,367 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+2020-06-23 21:11:54,367 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.46285163052380085 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+2020-06-23 21:11:55,074 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+2020-06-23 21:11:55,075 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7073468416929245 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+2020-06-23 21:11:56,656 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+2020-06-23 21:11:56,656 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.5810479056090117 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+2020-06-23 21:11:57,372 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+2020-06-23 21:11:57,372 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.715615525841713 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+2020-06-23 21:11:57,789 - VegET_CLASS - INFO - today is 292
+2020-06-23 21:11:58,611 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8211178909987211 - out_drb_20years/swi_1999292.tif
+2020-06-23 21:11:59,616 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.0054919719696045 - out_drb_20years/snwpk_1999292.tif
+2020-06-23 21:12:02,014 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.3969926591962576 - out_drb_20years/rain_1999292.tif
+2020-06-23 21:12:05,934 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 3.919636889360845 - out_drb_20years/swe_1999292.tif
+2020-06-23 21:12:07,324 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3900667298585176 - out_drb_20years/snowmelt_1999292.tif
+2020-06-23 21:12:11,470 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 4.006561906076968 - out_drb_20years/dd_1999292.tif
+2020-06-23 21:12:12,787 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3172399923205376 - out_drb_20years/srf_1999292.tif
+2020-06-23 21:12:14,204 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9099877839908004 - out_drb_20years/etasw_1999292.tif
+2020-06-23 21:12:15,031 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8264641556888819 - out_drb_20years/swf_1999292.tif
+2020-06-23 21:12:15,892 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8615555064752698 - out_drb_20years/etasw5_1999292.tif
+2020-06-23 21:12:16,783 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8905143365263939 - out_drb_20years/etc_1999292.tif
+2020-06-23 21:12:17,587 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8039950393140316 - out_drb_20years/netet_1999292.tif
+2020-06-23 21:12:17,684 - VegET_CLASS - INFO - DAY - TIME - 32.417882995679975 - 1999-10-19 00:00:00
+2020-06-23 21:12:17,685 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:12:24,003 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+2020-06-23 21:12:24,003 - COOL RASTERMANAGER - INFO - WARP - TIME - 6.318462745286524 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+2020-06-23 21:12:25,999 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+2020-06-23 21:12:25,999 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9953192258253694 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+2020-06-23 21:12:26,459 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+2020-06-23 21:12:26,459 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4596093064174056 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+2020-06-23 21:12:27,147 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+2020-06-23 21:12:27,147 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6880123503506184 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+2020-06-23 21:12:27,832 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+2020-06-23 21:12:27,833 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.685130781494081 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+2020-06-23 21:12:28,585 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+2020-06-23 21:12:28,585 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7520043104887009 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+2020-06-23 21:12:28,971 - VegET_CLASS - INFO - today is 293
+2020-06-23 21:12:29,834 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8628416443243623 - out_drb_20years/swi_1999293.tif
+2020-06-23 21:12:30,777 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9422771204262972 - out_drb_20years/snwpk_1999293.tif
+2020-06-23 21:12:31,646 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8695669276639819 - out_drb_20years/rain_1999293.tif
+2020-06-23 21:12:33,090 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.4430439425632358 - out_drb_20years/swe_1999293.tif
+2020-06-23 21:12:33,944 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8542250860482454 - out_drb_20years/snowmelt_1999293.tif
+2020-06-23 21:12:36,660 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.5713847391307354 - out_drb_20years/dd_1999293.tif
+2020-06-23 21:12:37,792 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.131931315176189 - out_drb_20years/srf_1999293.tif
+
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+data shape = (3116, 1941)
+1999 10 11
+today is 284
+swout swi_1999284.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+data shape = (3116, 1941)
+1999 10 12
+today is 285
+swout swi_1999285.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+data shape = (3116, 1941)
+1999 10 13
+today is 286
+swout swi_1999286.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+data shape = (3116, 1941)
+1999 10 14
+today is 287
+swout swi_1999287.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+data shape = (3116, 1941)
+1999 10 15
+today is 288
+swout swi_1999288.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+data shape = (3116, 1941)
+1999 10 16
+today is 289
+swout swi_1999289.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+data shape = (3116, 1941)
+1999 10 17
+today is 290
+swout swi_1999290.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+data shape = (3116, 1941)
+1999 10 18
+today is 291
+swout swi_1999291.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+data shape = (3116, 1941)
+1999 10 19
+today is 292
+swout swi_1999292.tif
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+(3116, 1941)
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+data shape = (3116, 1941)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+data shape = (3116, 1941)
+1999 10 20
+today is 293
+swout swi_1999293.tif
+(3116, 1941)2020-06-23 21:12:39,175 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8757032975554466 - out_drb_20years/etasw_1999293.tif
+2020-06-23 21:12:40,986 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.8108754409477115 - out_drb_20years/swf_1999293.tif
+2020-06-23 21:12:59,783 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 18.796936913393438 - out_drb_20years/etasw5_1999293.tif
+2020-06-23 21:13:01,063 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.278955732472241 - out_drb_20years/etc_1999293.tif
+2020-06-23 21:13:02,382 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.3193830698728561 - out_drb_20years/netet_1999293.tif
+2020-06-23 21:13:02,489 - VegET_CLASS - INFO - DAY - TIME - 44.80462238099426 - 1999-10-20 00:00:00
+2020-06-23 21:13:02,489 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-23 21:13:09,921 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med294.250_m_NDVI.tif
+2020-06-23 21:13:09,921 - COOL RASTERMANAGER - INFO - WARP - TIME - 7.431208008900285 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med294.250_m_NDVI.tif
+2020-06-23 21:13:11,936 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet294.tif
+2020-06-23 21:13:11,937 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.0154973370954394 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet294.tif
+2020-06-23 21:13:12,434 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999294.tif
+2020-06-23 21:13:12,434 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4973166873678565 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999294.tif
+2020-06-23 21:13:13,205 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_294.tif
+2020-06-23 21:13:13,205 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7703765099868178 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_294.tif
+2020-06-23 21:13:13,947 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_294.tif
+2020-06-23 21:13:13,947 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7413576869294047 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_294.tif
+2020-06-23 21:13:14,666 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_294.tif
+2020-06-23 21:13:14,666 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7185710640624166 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_294.tif
+2020-06-23 21:13:15,069 - VegET_CLASS - INFO - today is 294
+2020-06-23 21:13:16,031 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9611618267372251 - out_drb_20years/swi_1999294.tif
+2020-06-23 21:13:16,868 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8371352152898908 - out_drb_20years/snwpk_1999294.tif
+2020-06-23 21:13:18,888 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.0198545455932617 - out_drb_20years/rain_1999294.tif
+2020-06-23 21:13:19,762 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8734480887651443 - out_drb_20years/swe_1999294.tif
+2020-06-23 21:13:20,722 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.959563703276217 - out_drb_20years/snowmelt_1999294.tif
+2020-06-23 21:13:21,692 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8254165481775999 - out_drb_20years/dd_1999294.tif
+2020-06-23 21:13:22,940 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.2479445887729526 - out_drb_20years/srf_1999294.tif
+2020-06-23 21:13:26,455 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 3.01866318564862 - out_drb_20years/etasw_1999294.tif
+2020-06-23 21:13:27,350 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8946206709370017 - out_drb_20years/swf_1999294.tif
+2020-06-23 21:13:28,193 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8425250630825758 - out_drb_20years/etasw5_1999294.tif
+2020-06-23 21:13:29,141 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.948245083913207 - out_drb_20years/etc_1999294.tif
+2020-06-23 21:13:30,064 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.9226364539936185 - out_drb_20years/netet_1999294.tif
+2020-06-23 21:13:30,163 - VegET_CLASS - INFO - DAY - TIME - 27.673316882923245 - 1999-10-21 00:00:00
+2020-06-23 21:13:30,163 - COOL RASTERMANAGER - INFO - _warp_inputs
