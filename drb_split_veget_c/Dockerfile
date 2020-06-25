@@ -22,10 +22,11 @@ RUN \
 	pip install --no-cache fiona
 
 
-ENV TONYVERS=2.6
+ENV TONYVERS=2.8
 RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/skagone/cloud-veg-et && \
 	(cd /home/veget/cloud-veg-et/veget/vegetLib; make build-root)
 
+COPY AOI /home/veget/cloud-veg-et/veget/api_veget/AOI
 COPY delaware_20_config /home/veget/cloud-veg-et/veget/api_veget/delaware_config
 #COPY sample_config /home/veget/cloud-veg-et/veget/api_veget/sample_config
 

@@ -3,7 +3,7 @@
 # input location
 # in_root: dev-et-data
 # output_location
-out_root: dev-et-data/lilDRB
+out_root: dev-et-data/out_d40N-78E
 # temporary folder for rasterio vrt -> npy conversion
 temp_folder: ./lilDRB_temp
 # Dataset info

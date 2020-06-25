@@ -1,4 +1,4 @@
-Image=tbutzer/veget_c
+Image=tbutzer/drb_veget_c
 
 build:
 	docker build -t ${Image} .
@@ -14,4 +14,4 @@ git:
 
 
 dela_logs:
-	docker run -i ${Image} python3 api_veget.py -c delaware_config -s DRB.shp lilDRB_temp
+	docker run -i ${Image} python3 api_veget.py -c delaware_config -s AOI/d40N-78E.shp lilDRB_temp
