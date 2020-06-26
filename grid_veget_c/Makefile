@@ -14,4 +14,5 @@ git:
 
 
 dela_logs:
-	docker run -i ${Image} python3 api_veget.py -c delaware_config -s AOI/d40N-78E.shp lilDRB_temp
+	docker run -i ${Image} python3 api_veget.py -c running_config -s AOI/d40N-78E.shp tile40N-80E_chip40N-78E
+

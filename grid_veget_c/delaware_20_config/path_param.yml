@@ -3,9 +3,9 @@
 # input location
 # in_root: dev-et-data
 # output_location
-out_root: dev-et-data/out_d40N-78E
+out_root: dev-et-data/tiles/t40N-80E/c40N-78E
 # temporary folder for rasterio vrt -> npy conversion
-temp_folder: ./lilDRB_temp
+temp_folder: ./bogus_temp
 # Dataset info
 
 precip_settings:
