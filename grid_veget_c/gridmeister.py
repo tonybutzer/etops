@@ -171,7 +171,8 @@ class GridMeister:
             print(full_cmd)
             cmds.append(full_cmd)
 
-        with open('cmd_runner.sh','w') as f:
+        cmd_filename = 'cmd_runner_' + self.tile_name + '.sh'
+        with open(cmd_filename,'w') as f:
             for cmd in cmds:
                 print(cmd)
                 f.write(cmd+'\n')
