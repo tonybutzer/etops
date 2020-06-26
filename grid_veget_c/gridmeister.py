@@ -147,6 +147,34 @@ class GridMeister:
         print(coord_list)
         filename = make_filename(self.tile_name, chip_name, '.json')
         print(filename)
-        full_filename =  self.aoi_dir = './AOI' + '/' + filename
+        full_filename =  self.aoi_dir + '/' + filename
         _write_geojson(full_filename, coord_list)
         _write_shp(full_filename)
+
+
+    def build_docker_run_bash(self, chip_list):
+        print(chip_list)
+        vols = '-v /opt/etops/grid_veget_c/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI'
+        image = 'tbutzer/drb_veget_c'
+        cmds=[]
+        for chip_name in chip_list:
+            filename = make_filename(self.tile_name, chip_name, '.shp')
+            full_filename =  self.aoi_dir + '/' + filename
+            tile = filename.split('.shp')[0]
+            cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {}  {}'.format(vols,image,full_filename,tile)
+            print(cmd)
+            logname = filename = make_filename(self.tile_name, chip_name, '.log')
+            full_logname = './log' + '/' + logname
+            print(full_logname)
+
+            full_cmd = cmd + '  2>&1 | tee  ' + full_logname +'&'
+            print(full_cmd)
+            cmds.append(full_cmd)
+
+        with open('cmd_runner.sh','w') as f:
+            for cmd in cmds:
+                print(cmd)
+                f.write(cmd+'\n')
+        f.close()
+
+

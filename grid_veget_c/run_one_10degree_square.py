@@ -10,3 +10,4 @@ print(chip_list)
 for chip in chip_list:
         gm.create_chip_shp(chip)
 
+gm.build_docker_run_bash(chip_list)
