@@ -2,7 +2,7 @@ import sys
 from gridmeister import GridMeister
 
 
-tile = 'drb_chips_7_2020'
+tile = 'drb_tile_7_20'
 
 optimize=True
 if len(sys.argv) > 2:

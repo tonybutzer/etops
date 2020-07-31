@@ -12,6 +12,9 @@ exec:
 git:
 	(cd /opt/etops ; make)
 
+kill_all_containers:
+	echo docker kill '$$(docker ps -q)'
+
 
 dela_logs:
 	docker run -i ${Image} python3 api_veget.py -c running_config -s AOI/d40N-78E.shp tile40N-80E_chip40N-78E
