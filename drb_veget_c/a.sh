@@ -1,0 +1,1 @@
+docker run -i -v /opt/etops/grid_veget_c/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI tbutzer/drb_veget_c python3 api_veget.py -c running_config -s ./AOI/drb_chips_7_2020_chip44N-78E.shp  drb_chips_7_2020_chip44N-78E  2>&1 | tee  ./log/drb_chips_7_2020_chip44N-78E.log&
