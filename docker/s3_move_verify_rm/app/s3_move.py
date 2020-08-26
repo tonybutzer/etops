@@ -1,3 +1,4 @@
+import sys
 import subprocess
 import argparse
 import boto3
@@ -37,7 +38,7 @@ def command_line_runner():
     s3sync(src,dst)
 
 
-    ###
+    ### Verify total number of bytes is the same
 
     bucket = dst.split('/')[0]
     prefix = '/'.join(dst.split('/')[1:])
@@ -46,15 +47,50 @@ def command_line_runner():
     dst_byte_sum = 0
     for (obj,length) in dst_s3_list:
         print(obj, length)
-        byte_sum = byte_sum + length
+        dst_byte_sum = dst_byte_sum + length
 
-    print("\nTotal Objects = ", len(s3_list))
+    print("\nTotal Objects = ", len(dst_s3_list))
     print("\tTotal Bytes = ", dst_byte_sum)
 
     if dst_byte_sum != byte_sum:
         print("BUMMER")
+    else:
+        print("Yay the sizes are the same")
 
 
+
+    ### Verify and delete the src
+
+    src_dict = {}
+    for (obj,length) in s3_list:
+        src_dict[obj] = length
+        
+    dst_dict = {}
+    for (obj,length) in dst_s3_list:
+        dst_dict[obj] = length
+
+
+    for key in dst_dict.keys():
+        # print("key", key, "length", dst_dict[key])
+        related_src_key = get_related_src_key(key, src, dst)
+        if dst_dict[key] != src_dict[related_src_key]:
+            print("Destination File Object is not the same size as SRC!")
+            sys.exit(1)
+        else:
+            print("Safe to remove:",related_src_key)
+            #s3_rm_object(related_src_key)   ### single deletes too slow
+
+    s3_recursive_rm(src)
+
+###
+def get_related_src_key(key, src, dst):
+    tail_of_key = key.replace(dst, '')
+    #print("tail", tail_of_key)
+    related_key = src + tail_of_key
+    #print("related_key",related_key)
+    return(related_key)
+
+    
 #### S3 Stuff
 
 def return_s3_list(working_bucket, prefix):
@@ -63,7 +99,9 @@ def return_s3_list(working_bucket, prefix):
         bucket_name = working_bucket
         bucket = s3.Bucket(bucket_name)
         for obj in bucket.objects.filter(Prefix=prefix):
-            aws_list.append((obj.key, obj.size))
+            obj_key = obj.key
+            obj_key = working_bucket + '/' + obj_key
+            aws_list.append((obj_key, obj.size))
         return aws_list
 
 
@@ -87,6 +125,22 @@ def s3sync(src,dst):
         pushcmd = "aws s3 sync %s %s" % (src, dst)
         print (pushcmd)
         subprocess_cmd(pushcmd)
+
+def s3_recursive_rm(src):
+        src = 's3://' + src
+        print ("hello from s3_recursive_rm dir " + src)
+        pushcmd = "aws s3 rm --recursive %s" % (src)
+        print (pushcmd)
+        subprocess_cmd(pushcmd)
+
+def s3_rm_object(full_object_name):
+    session = boto3.Session()
+    s3=session.resource('s3')
+    bucket = full_object_name.split('/')[0]
+    key = '/'.join(full_object_name.split('/')[1:])
+    obj = s3.Object(bucket, key)
+    print("Deleting: ", full_object_name)
+    obj.delete()
 
 if __name__ == '__main__':
     command_line_runner()

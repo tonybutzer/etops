@@ -1,0 +1,11 @@
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2006/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2006/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2007/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2007/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2008/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2008/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2009/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2009/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2010/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2010/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2011/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2011/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2012/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2012/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2013/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2013/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2014/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2014/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2015/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2015/ &
+python3 s3_move.py --src dev-et-data/in/north_america_data/precipitation/2016/ --dst dev-et-data/in/NorthAmerica/PPT/daily/2016/ &
