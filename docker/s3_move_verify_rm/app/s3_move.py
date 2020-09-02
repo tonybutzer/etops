@@ -87,6 +87,7 @@ def get_related_src_key(key, src, dst):
     tail_of_key = key.replace(dst, '')
     #print("tail", tail_of_key)
     related_key = src + tail_of_key
+    related_key = related_key.replace('//', '/')
     #print("related_key",related_key)
     return(related_key)
 
