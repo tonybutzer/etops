@@ -13,6 +13,7 @@ git:
 	(cd /opt/etops ; make)
 
 kill_all_containers:
+	echo WARNING not killing just echo
 	echo docker kill '$$(docker ps -q)'
 
 cmd:

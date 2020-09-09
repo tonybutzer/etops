@@ -1,0 +1,1706 @@
+docker run -i tbutzer/drb_veget_c python3 api_veget.py -c running_config -s AOI/d40N-78E.shp tile40N-80E_chip40N-78E
+2020-06-26 16:07:07,217 - BOXY_THINGYS - INFO - Logging Begins
+2020-06-26 16:07:07,218 - CLOUD_VEGET - INFO - Logging Begins
+2020-06-26 16:07:07,219 - CLOUD_VEGET - INFO - Processing Tile tile40N-80E_chip40N-78E
+2020-06-26 16:07:07,220 - CLOUD_VEGET - ERROR - Someday tony needs to refine logging and determine a std format for ELK
+2020-06-26 16:07:07,220 - CLOUD_VEGET - ERROR - or logging agents and logging backends ... docker deployments
+2020-06-26 16:07:07,220 - VegET_CLASS - INFO - Logging Begins
+2020-06-26 16:07:07,220 - VegET_CLASS - INFO - TILE is tile40N-80E_chip40N-78E
+2020-06-26 16:07:07,220 - VegET_CLASS - INFO - Important Config path is running_config
+2020-06-26 16:07:07,236 - VegET_CLASS - INFO - Important path mode is aws
+2020-06-26 16:07:07,237 - COOL RASTERMANAGER - INFO - Logging Begins
+2020-06-26 16:07:07,237 - COOL RASTERMANAGER - INFO - Tony-s stupid - tile name is - tile40N-80E_chip40N-78E
+2020-06-26 16:07:07,237 - COOL RASTERMANAGER - INFO - using scalable tile names tile40N-80E_chip40N-78E
+2020-06-26 16:07:07,237 - COOL RASTERMANAGER - INFO - temp folder is
+2020-06-26 16:07:07,238 - PATHMANAGER - INFO - Logging Begins
+2020-06-26 16:07:08,432 - VegET_CLASS - INFO - OUTPUT Directory is: dev-et-data/tiles/tile40N-80E_chip40N-78E
+2020-06-26 16:07:08,440 - VegET_CLASS - INFO - self.rmanager.normalize_to_std_grid_fast ['/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif', '/vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif', '/vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif']
+2020-06-26 16:07:08,440 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:07:09,850 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+2020-06-26 16:07:09,850 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.409919940007967 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+2020-06-26 16:07:12,661 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+2020-06-26 16:07:12,661 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.8098201009997865 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+2020-06-26 16:07:15,448 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+2020-06-26 16:07:15,448 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.7863946500001475 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+2020-06-26 16:07:17,928 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+2020-06-26 16:07:17,928 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.4797504800080787 - /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+2020-06-26 16:07:19,090 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+2020-06-26 16:07:19,090 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.1612445750070037 - /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+2020-06-26 16:07:19,093 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:07:20,766 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+2020-06-26 16:07:20,766 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6730398859945126 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+2020-06-26 16:07:21,570 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+2020-06-26 16:07:21,570 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8037687050091336 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+2020-06-26 16:07:22,022 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+2020-06-26 16:07:22,022 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4521318240003893 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+2020-06-26 16:07:22,598 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+2020-06-26 16:07:22,598 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5754137239855481 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+2020-06-26 16:07:23,209 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+2020-06-26 16:07:23,209 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6108951350033749 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+2020-06-26 16:07:23,678 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+2020-06-26 16:07:23,679 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4692587809986435 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+2020-06-26 16:07:23,712 - VegET_CLASS - INFO - today is 275
+2020-06-26 16:07:25,225 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.5124045310076326 - tiles/tile40N-80E_chip40N-78E/swi_1999275.tif
+2020-06-26 16:07:25,521 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2957303870061878 - tiles/tile40N-80E_chip40N-78E/snwpk_1999275.tif
+2020-06-26 16:07:25,919 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.39773969700036105 - tiles/tile40N-80E_chip40N-78E/rain_1999275.tif
+2020-06-26 16:07:26,360 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.44020963201182894 - tiles/tile40N-80E_chip40N-78E/swe_1999275.tif
+2020-06-26 16:07:26,694 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33416390100319404 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999275.tif
+2020-06-26 16:07:27,035 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.322946846994455 - tiles/tile40N-80E_chip40N-78E/dd_1999275.tif
+2020-06-26 16:07:27,382 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34641260499483906 - tiles/tile40N-80E_chip40N-78E/srf_1999275.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:313: RuntimeWarning: invalid value encountered in true_divide
+  etasw2 = (SWi / (0.5 * self.whc)) * etasw1
+2020-06-26 16:07:27,955 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5132188799907453 - tiles/tile40N-80E_chip40N-78E/etasw_1999275.tif
+2020-06-26 16:07:28,301 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3449787640129216 - tiles/tile40N-80E_chip40N-78E/swf_1999275.tif
+2020-06-26 16:07:28,572 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.271480386989424 - tiles/tile40N-80E_chip40N-78E/etasw5_1999275.tif
+2020-06-26 16:07:28,894 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3209747030050494 - tiles/tile40N-80E_chip40N-78E/etc_1999275.tif
+2020-06-26 16:07:29,153 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2595217380003305 - tiles/tile40N-80E_chip40N-78E/netet_1999275.tif
+2020-06-26 16:07:29,153 - VegET_CLASS - INFO - DAY - TIME - 10.060955559994909 - 1999-10-02 00:00:00
+2020-06-26 16:07:29,154 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:07:31,299 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+2020-06-26 16:07:31,300 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.145997265004553 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+2020-06-26 16:07:31,937 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+2020-06-26 16:07:31,938 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6375091729860287 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+2020-06-26 16:07:32,206 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+2020-06-26 16:07:32,206 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2680000550026307 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+2020-06-26 16:07:32,592 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+2020-06-26 16:07:32,592 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3856105759914499 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+2020-06-26 16:07:32,969 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+2020-06-26 16:07:32,969 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.37716362699575257 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+2020-06-26 16:07:33,411 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+2020-06-26 16:07:33,412 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.44162754899298307 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+2020-06-26 16:07:33,462 - VegET_CLASS - INFO - today is 276
+2020-06-26 16:07:33,708 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2457490200031316 - tiles/tile40N-80E_chip40N-78E/swi_1999276.tif
+2020-06-26 16:07:33,915 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.20714435999980196 - tiles/tile40N-80E_chip40N-78E/snwpk_1999276.tif
+2020-06-26 16:07:34,149 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23400224800570868 - tiles/tile40N-80E_chip40N-78E/rain_1999276.tif
+2020-06-26 16:07:34,427 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2778751109872246 - tiles/tile40N-80E_chip40N-78E/swe_1999276.tif
+2020-06-26 16:07:34,632 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.20500713899673428 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999276.tif
+2020-06-26 16:07:34,922 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2725220980064478 - tiles/tile40N-80E_chip40N-78E/dd_1999276.tif
+2020-06-26 16:07:35,140 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2173641950066667 - tiles/tile40N-80E_chip40N-78E/srf_1999276.tif
+/usr/local/lib/python3.8/site-packages/vegetLib/veget.py:313: RuntimeWarning: divide by zero encountered in true_divide
+  etasw2 = (SWi / (0.5 * self.whc)) * etasw1
+2020-06-26 16:07:35,495 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28885927698866 - tiles/tile40N-80E_chip40N-78E/etasw_1999276.tif
+2020-06-26 16:07:36,296 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8013954759953776 - tiles/tile40N-80E_chip40N-78E/swf_1999276.tif
+2020-06-26 16:07:36,688 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.39158159399812575 - tiles/tile40N-80E_chip40N-78E/etasw5_1999276.tif
+2020-06-26 16:07:37,093 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.40421067099669017 - tiles/tile40N-80E_chip40N-78E/etc_1999276.tif
+2020-06-26 16:07:39,476 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 2.3833627510030055 - tiles/tile40N-80E_chip40N-78E/netet_1999276.tif
+2020-06-26 16:07:39,515 - VegET_CLASS - INFO - DAY - TIME - 10.36161749700841 - 1999-10-03 00:00:00
+2020-06-26 16:07:39,515 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:07:41,083 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+2020-06-26 16:07:41,083 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.568038619006984 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+2020-06-26 16:07:41,701 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+2020-06-26 16:07:41,701 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6173674589954317 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+2020-06-26 16:07:42,007 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+2020-06-26 16:07:42,007 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.30535398599749897 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+2020-06-26 16:07:42,400 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+2020-06-26 16:07:42,400 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3929167320020497 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+2020-06-26 16:07:42,906 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+2020-06-26 16:07:42,907 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5062151269958122 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+2020-06-26 16:07:43,390 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+2020-06-26 16:07:43,390 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4831326160056051 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+2020-06-26 16:07:43,439 - VegET_CLASS - INFO - today is 277
+2020-06-26 16:07:43,932 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4924222379922867 - tiles/tile40N-80E_chip40N-78E/swi_1999277.tif
+2020-06-26 16:07:44,209 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27690698599326424 - tiles/tile40N-80E_chip40N-78E/snwpk_1999277.tif
+2020-06-26 16:07:44,466 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2566943969868589 - tiles/tile40N-80E_chip40N-78E/rain_1999277.tif
+2020-06-26 16:07:44,844 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3780142820032779 - tiles/tile40N-80E_chip40N-78E/swe_1999277.tif
+2020-06-26 16:07:45,108 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2633983249979792 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999277.tif
+2020-06-26 16:07:45,330 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2051169970072806 - tiles/tile40N-80E_chip40N-78E/dd_1999277.tif
+2020-06-26 16:07:45,623 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29329409199999645 - tiles/tile40N-80E_chip40N-78E/srf_1999277.tif
+2020-06-26 16:07:45,979 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2931246910011396 - tiles/tile40N-80E_chip40N-78E/etasw_1999277.tif
+2020-06-26 16:07:46,205 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22571084600349423 - tiles/tile40N-80E_chip40N-78E/swf_1999277.tif
+2020-06-26 16:07:46,492 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28633495699614286 - tiles/tile40N-80E_chip40N-78E/etasw5_1999277.tif
+2020-06-26 16:07:46,793 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3007980900001712 - tiles/tile40N-80E_chip40N-78E/etc_1999277.tif
+2020-06-26 16:07:47,169 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.37556414199934807 - tiles/tile40N-80E_chip40N-78E/netet_1999277.tif
+2020-06-26 16:07:47,182 - VegET_CLASS - INFO - DAY - TIME - 7.666870701999869 - 1999-10-04 00:00:00
+2020-06-26 16:07:47,183 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:07:48,810 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+2020-06-26 16:07:48,810 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6278082040080335 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+2020-06-26 16:07:49,494 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+2020-06-26 16:07:49,494 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6832098789891461 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+2020-06-26 16:07:49,760 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+2020-06-26 16:07:49,760 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.26594110899895895 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+2020-06-26 16:07:50,117 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+2020-06-26 16:07:50,117 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.35677193000447005 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+2020-06-26 16:07:50,497 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+2020-06-26 16:07:50,497 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.38001544699363876 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+2020-06-26 16:07:50,832 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+2020-06-26 16:07:50,832 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.33432952300063334 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+2020-06-26 16:07:50,879 - VegET_CLASS - INFO - today is 278
+2020-06-26 16:07:51,130 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2509702229872346 - tiles/tile40N-80E_chip40N-78E/swi_1999278.tif
+2020-06-26 16:07:51,378 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24762432101124432 - tiles/tile40N-80E_chip40N-78E/snwpk_1999278.tif
+2020-06-26 16:07:51,719 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3408586730074603 - tiles/tile40N-80E_chip40N-78E/rain_1999278.tif
+2020-06-26 16:07:52,083 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3642367949942127 - tiles/tile40N-80E_chip40N-78E/swe_1999278.tif
+2020-06-26 16:07:52,484 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.40050148000591435 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999278.tif
+2020-06-26 16:07:52,759 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2567438529949868 - tiles/tile40N-80E_chip40N-78E/dd_1999278.tif
+2020-06-26 16:07:52,990 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23002859800180886 - tiles/tile40N-80E_chip40N-78E/srf_1999278.tif
+2020-06-26 16:07:53,362 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3135748860077001 - tiles/tile40N-80E_chip40N-78E/etasw_1999278.tif
+2020-06-26 16:07:53,704 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3416895080008544 - tiles/tile40N-80E_chip40N-78E/swf_1999278.tif
+2020-06-26 16:07:53,955 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.25155574099335354 - tiles/tile40N-80E_chip40N-78E/etasw5_1999278.tif
+2020-06-26 16:07:54,295 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33977266200236045 - tiles/tile40N-80E_chip40N-78E/etc_1999278.tif
+2020-06-26 16:07:54,548 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2521036859980086 - tiles/tile40N-80E_chip40N-78E/netet_1999278.tif
+2020-06-26 16:07:54,561 - VegET_CLASS - INFO - DAY - TIME - 7.3789869460015325 - 1999-10-05 00:00:00
+2020-06-26 16:07:54,562 - COOL RASTERMANAGER - INFO - _warp_inputs
+configdir running_config
+tile ['tile40N-80E_chip40N-78E']
+shp AOI/d40N-78E.shp
+Using config_dict dir running_config to process tile tile40N-80E_chip40N-78E
+------------------------------------------------------------------------------------------
+             _ _            ___  ___  _  _ 
+            | | | ___  ___ | __>|_ _|| || |
+            | ' |/ ._>/ . || _>  | | |_/|_/
+            |__/ \___.\_. ||___> |_| <_><_>
+                       <___'                
+1999-10-02 00:00:00
+2001-12-31 00:00:00
+821
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/inp.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/whc.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/fdc.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Soil/global/sat.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/global_water_mask_inland.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med275.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet275.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999275.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_275.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_275.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_275.tif
+data shape = (962, 962)
+1999 10 2
+today is 275
+swout swi_1999275.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med276.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet276.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999276.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_276.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_276.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_276.tif
+data shape = (962, 962)
+1999 10 3
+today is 276
+swout swi_1999276.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med277.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet277.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999277.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_277.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_277.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_277.tif
+data shape = (962, 962)
+1999 10 4
+today is 277
+swout swi_1999277.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med278.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet278.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999278.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_278.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_278.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_278.tif
+data shape = (962, 962)
+1999 10 5
+today is 278
+swout swi_1999278.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif2020-06-26 16:07:56,198 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif
+2020-06-26 16:07:56,198 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6359869049920235 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med279.250_m_NDVI.tif
+2020-06-26 16:07:56,973 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+2020-06-26 16:07:56,973 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7748892579984386 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+2020-06-26 16:07:57,276 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+2020-06-26 16:07:57,276 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.30258957600744907 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+2020-06-26 16:07:57,620 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+2020-06-26 16:07:57,620 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3437170969991712 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+2020-06-26 16:07:58,045 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+2020-06-26 16:07:58,045 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4249902640003711 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+2020-06-26 16:07:58,439 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+2020-06-26 16:07:58,439 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.39371257300081197 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+2020-06-26 16:07:58,485 - VegET_CLASS - INFO - today is 279
+2020-06-26 16:07:58,764 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27862397200078703 - tiles/tile40N-80E_chip40N-78E/swi_1999279.tif
+2020-06-26 16:07:59,127 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.36304299300536513 - tiles/tile40N-80E_chip40N-78E/snwpk_1999279.tif
+2020-06-26 16:07:59,393 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2659742260002531 - tiles/tile40N-80E_chip40N-78E/rain_1999279.tif
+2020-06-26 16:07:59,620 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22643525400781073 - tiles/tile40N-80E_chip40N-78E/swe_1999279.tif
+2020-06-26 16:07:59,900 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27988904499216005 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999279.tif
+2020-06-26 16:08:00,372 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4555948680063011 - tiles/tile40N-80E_chip40N-78E/dd_1999279.tif
+2020-06-26 16:08:00,690 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.31807848399330396 - tiles/tile40N-80E_chip40N-78E/srf_1999279.tif
+2020-06-26 16:08:01,078 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.329407060999074 - tiles/tile40N-80E_chip40N-78E/etasw_1999279.tif
+2020-06-26 16:08:01,452 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3736899649957195 - tiles/tile40N-80E_chip40N-78E/swf_1999279.tif
+2020-06-26 16:08:01,761 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.30850190299679525 - tiles/tile40N-80E_chip40N-78E/etasw5_1999279.tif
+2020-06-26 16:08:02,115 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3537024020042736 - tiles/tile40N-80E_chip40N-78E/etc_1999279.tif
+2020-06-26 16:08:02,351 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23588873699191026 - tiles/tile40N-80E_chip40N-78E/netet_1999279.tif
+2020-06-26 16:08:02,374 - VegET_CLASS - INFO - DAY - TIME - 7.811945681998623 - 1999-10-06 00:00:00
+2020-06-26 16:08:02,376 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:04,060 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+2020-06-26 16:08:04,060 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6839178020018153 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+2020-06-26 16:08:04,657 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+2020-06-26 16:08:04,658 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5971843900042586 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+2020-06-26 16:08:04,914 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+2020-06-26 16:08:04,914 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2559059100021841 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+2020-06-26 16:08:05,231 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+2020-06-26 16:08:05,231 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.31760616999235936 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+2020-06-26 16:08:05,583 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+2020-06-26 16:08:05,583 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.35116077300335746 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+2020-06-26 16:08:05,961 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+2020-06-26 16:08:05,961 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.37759939600073267 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+2020-06-26 16:08:06,023 - VegET_CLASS - INFO - today is 280
+2020-06-26 16:08:06,618 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5954824060027022 - tiles/tile40N-80E_chip40N-78E/swi_1999280.tif
+2020-06-26 16:08:06,895 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27639722599997185 - tiles/tile40N-80E_chip40N-78E/snwpk_1999280.tif
+2020-06-26 16:08:07,354 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.45855614099127706 - tiles/tile40N-80E_chip40N-78E/rain_1999280.tif
+2020-06-26 16:08:07,766 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.41158381500281394 - tiles/tile40N-80E_chip40N-78E/swe_1999280.tif
+2020-06-26 16:08:08,058 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2925738929916406 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999280.tif
+2020-06-26 16:08:08,322 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24837097500858363 - tiles/tile40N-80E_chip40N-78E/dd_1999280.tif
+2020-06-26 16:08:08,659 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33687501499662176 - tiles/tile40N-80E_chip40N-78E/srf_1999280.tif
+2020-06-26 16:08:08,994 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2718205690034665 - tiles/tile40N-80E_chip40N-78E/etasw_1999280.tif
+2020-06-26 16:08:09,343 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3484906149969902 - tiles/tile40N-80E_chip40N-78E/swf_1999280.tif
+2020-06-26 16:08:09,575 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23188362999644596 - tiles/tile40N-80E_chip40N-78E/etasw5_1999280.tif
+2020-06-26 16:08:09,810 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23446762500680052 - tiles/tile40N-80E_chip40N-78E/etc_1999280.tif
+2020-06-26 16:08:10,070 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26008735899813473 - tiles/tile40N-80E_chip40N-78E/netet_1999280.tif
+2020-06-26 16:08:10,084 - VegET_CLASS - INFO - DAY - TIME - 7.709857526002452 - 1999-10-07 00:00:00
+2020-06-26 16:08:10,084 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:11,801 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+2020-06-26 16:08:11,801 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.7168537139950786 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+2020-06-26 16:08:12,431 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+2020-06-26 16:08:12,431 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.629561312001897 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+2020-06-26 16:08:12,883 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+2020-06-26 16:08:12,883 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4519992120040115 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+2020-06-26 16:08:13,480 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+2020-06-26 16:08:13,480 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5967942249990301 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+2020-06-26 16:08:13,875 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+2020-06-26 16:08:13,875 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.39463618901208974 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+2020-06-26 16:08:14,182 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+2020-06-26 16:08:14,182 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.30665965400112327 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+2020-06-26 16:08:14,231 - VegET_CLASS - INFO - today is 281
+2020-06-26 16:08:14,568 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33647157199447975 - tiles/tile40N-80E_chip40N-78E/swi_1999281.tif
+2020-06-26 16:08:14,949 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.38134618500771467 - tiles/tile40N-80E_chip40N-78E/snwpk_1999281.tif
+2020-06-26 16:08:15,242 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29272953800682444 - tiles/tile40N-80E_chip40N-78E/rain_1999281.tif
+2020-06-26 16:08:15,512 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2679197960096644 - tiles/tile40N-80E_chip40N-78E/swe_1999281.tif
+2020-06-26 16:08:15,808 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29602724699361715 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999281.tif
+2020-06-26 16:08:16,432 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.6060453019890701 - tiles/tile40N-80E_chip40N-78E/dd_1999281.tif
+2020-06-26 16:08:16,725 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29309082799591124 - tiles/tile40N-80E_chip40N-78E/srf_1999281.tif
+2020-06-26 16:08:17,054 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2540902799955802 - tiles/tile40N-80E_chip40N-78E/etasw_1999281.tif
+2020-06-26 16:08:17,378 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3232256699993741 - tiles/tile40N-80E_chip40N-78E/swf_1999281.tif
+2020-06-26 16:08:17,888 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5101245770056266 - tiles/tile40N-80E_chip40N-78E/etasw5_1999281.tif
+2020-06-26 16:08:18,269 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3809037909959443 - tiles/tile40N-80E_chip40N-78E/etc_1999281.tif
+2020-06-26 16:08:18,576 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3059060309897177 - tiles/tile40N-80E_chip40N-78E/netet_1999281.tif
+2020-06-26 16:08:18,590 - VegET_CLASS - INFO - DAY - TIME - 8.506272990998696 - 1999-10-08 00:00:00
+2020-06-26 16:08:18,592 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:20,482 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+2020-06-26 16:08:20,482 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.8898417690070346 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+2020-06-26 16:08:21,158 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+2020-06-26 16:08:21,158 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6756340349966194 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+2020-06-26 16:08:21,407 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+2020-06-26 16:08:21,407 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.24877433199435472 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+2020-06-26 16:08:21,802 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+2020-06-26 16:08:21,802 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3952568950044224 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+2020-06-26 16:08:22,210 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+2020-06-26 16:08:22,210 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.40756673501164187 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+2020-06-26 16:08:22,741 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+2020-06-26 16:08:22,741 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.530912496993551 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+2020-06-26 16:08:22,789 - VegET_CLASS - INFO - today is 282
+2020-06-26 16:08:23,135 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3460160550021101 - tiles/tile40N-80E_chip40N-78E/swi_1999282.tif
+2020-06-26 16:08:23,383 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24814572600007523 - tiles/tile40N-80E_chip40N-78E/snwpk_1999282.tif
+2020-06-26 16:08:23,652 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26889436699275393 - tiles/tile40N-80E_chip40N-78E/rain_1999282.tif
+2020-06-26 16:08:23,933 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27995209500659257 - tiles/tile40N-80E_chip40N-78E/swe_1999282.tif
+2020-06-26 16:08:24,357 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.42400342199834995 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999282.tif
+2020-06-26 16:08:24,701 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.32674941699951887 - tiles/tile40N-80E_chip40N-78E/dd_1999282.tif
+2020-06-26 16:08:24,952 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2505049460014561 - tiles/tile40N-80E_chip40N-78E/srf_1999282.tif
+2020-06-26 16:08:25,410 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3912204320076853 - tiles/tile40N-80E_chip40N-78E/etasw_1999282.tif
+2020-06-26 16:08:26,168 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7575859100033995 - tiles/tile40N-80E_chip40N-78E/swf_1999282.tif
+2020-06-26 16:08:26,490 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3217226849956205 - tiles/tile40N-80E_chip40N-78E/etasw5_1999282.tif
+2020-06-26 16:08:26,684 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.1935049219900975 - tiles/tile40N-80E_chip40N-78E/etc_1999282.tif
+2020-06-26 16:08:27,036 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3525816290057264 - tiles/tile40N-80E_chip40N-78E/netet_1999282.tif
+2020-06-26 16:08:27,050 - VegET_CLASS - INFO - DAY - TIME - 8.459454801006359 - 1999-10-09 00:00:00
+2020-06-26 16:08:27,050 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:28,720 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+2020-06-26 16:08:28,720 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.669997246004641 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+2020-06-26 16:08:29,288 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+2020-06-26 16:08:29,288 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5671838650014251 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+2020-06-26 16:08:29,562 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+2020-06-26 16:08:29,563 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.27454110099643003 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+2020-06-26 16:08:29,918 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+2020-06-26 16:08:29,918 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3556047629972454 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+2020-06-26 16:08:30,303 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+2020-06-26 16:08:30,304 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3849789590021828 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+2020-06-26 16:08:30,778 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+2020-06-26 16:08:30,779 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4748815829952946 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+2020-06-26 16:08:30,823 - VegET_CLASS - INFO - today is 283
+2020-06-26 16:08:31,166 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34223852699506097 - tiles/tile40N-80E_chip40N-78E/swi_1999283.tif
+2020-06-26 16:08:31,479 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.31300913500308525 - tiles/tile40N-80E_chip40N-78E/snwpk_1999283.tif
+2020-06-26 16:08:31,761 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2815786629944341 - tiles/tile40N-80E_chip40N-78E/rain_1999283.tif
+2020-06-26 16:08:32,021 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2599269440106582 - tiles/tile40N-80E_chip40N-78E/swe_1999283.tif
+2020-06-26 16:08:32,407 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.38604944200778846 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999283.tif
+
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet279.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999279.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_279.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_279.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_279.tif
+data shape = (962, 962)
+1999 10 6
+today is 279
+swout swi_1999279.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med280.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet280.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999280.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_280.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_280.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_280.tif
+data shape = (962, 962)
+1999 10 7
+today is 280
+swout swi_1999280.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med281.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet281.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999281.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_281.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_281.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_281.tif
+data shape = (962, 962)
+1999 10 8
+today is 281
+swout swi_1999281.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med282.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet282.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999282.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_282.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_282.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_282.tif
+data shape = (962, 962)
+1999 10 9
+today is 282
+swout swi_1999282.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med283.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet283.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999283.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_283.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_283.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_283.tif
+data shape = (962, 962)
+1999 10 10
+today is 283
+swout swi_1999283.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']2020-06-26 16:08:32,754 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.32938234800531063 - tiles/tile40N-80E_chip40N-78E/dd_1999283.tif
+2020-06-26 16:08:33,160 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4048487319960259 - tiles/tile40N-80E_chip40N-78E/srf_1999283.tif
+2020-06-26 16:08:33,501 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2814246460038703 - tiles/tile40N-80E_chip40N-78E/etasw_1999283.tif
+2020-06-26 16:08:33,769 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2683434469945496 - tiles/tile40N-80E_chip40N-78E/swf_1999283.tif
+2020-06-26 16:08:33,997 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22792304400354624 - tiles/tile40N-80E_chip40N-78E/etasw5_1999283.tif
+2020-06-26 16:08:34,222 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22490776500490028 - tiles/tile40N-80E_chip40N-78E/etc_1999283.tif
+2020-06-26 16:08:34,580 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3568448489968432 - tiles/tile40N-80E_chip40N-78E/netet_1999283.tif
+2020-06-26 16:08:34,595 - VegET_CLASS - INFO - DAY - TIME - 7.544670372008113 - 1999-10-10 00:00:00
+2020-06-26 16:08:34,597 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:36,094 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+2020-06-26 16:08:36,094 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.4970763809978962 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+2020-06-26 16:08:36,794 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+2020-06-26 16:08:36,795 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.700397951004561 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+2020-06-26 16:08:37,062 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+2020-06-26 16:08:37,062 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.26740752199839335 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+2020-06-26 16:08:37,436 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+2020-06-26 16:08:37,436 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3735477400041418 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+2020-06-26 16:08:37,818 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+2020-06-26 16:08:37,818 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.38214522499765735 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+2020-06-26 16:08:38,165 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+2020-06-26 16:08:38,166 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.34710508400166873 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+2020-06-26 16:08:38,214 - VegET_CLASS - INFO - today is 284
+2020-06-26 16:08:38,450 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23616098900674842 - tiles/tile40N-80E_chip40N-78E/swi_1999284.tif
+2020-06-26 16:08:38,688 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2378294589871075 - tiles/tile40N-80E_chip40N-78E/snwpk_1999284.tif
+2020-06-26 16:08:39,044 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.35607287198945414 - tiles/tile40N-80E_chip40N-78E/rain_1999284.tif
+2020-06-26 16:08:39,393 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34874938600114547 - tiles/tile40N-80E_chip40N-78E/swe_1999284.tif
+2020-06-26 16:08:39,675 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2818027239991352 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999284.tif
+2020-06-26 16:08:40,067 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.37594945800083224 - tiles/tile40N-80E_chip40N-78E/dd_1999284.tif
+2020-06-26 16:08:40,438 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3711652000056347 - tiles/tile40N-80E_chip40N-78E/srf_1999284.tif
+2020-06-26 16:08:40,764 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26328618099796586 - tiles/tile40N-80E_chip40N-78E/etasw_1999284.tif
+2020-06-26 16:08:41,037 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2731940660014516 - tiles/tile40N-80E_chip40N-78E/swf_1999284.tif
+2020-06-26 16:08:41,416 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3787294540088624 - tiles/tile40N-80E_chip40N-78E/etasw5_1999284.tif
+2020-06-26 16:08:41,787 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3701468179933727 - tiles/tile40N-80E_chip40N-78E/etc_1999284.tif
+2020-06-26 16:08:42,063 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27606274001300335 - tiles/tile40N-80E_chip40N-78E/netet_1999284.tif
+2020-06-26 16:08:42,078 - VegET_CLASS - INFO - DAY - TIME - 7.482615375003661 - 1999-10-11 00:00:00
+2020-06-26 16:08:42,084 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:43,781 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+2020-06-26 16:08:43,781 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6969941160059534 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+2020-06-26 16:08:44,575 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+2020-06-26 16:08:44,575 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7933288550120778 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+2020-06-26 16:08:44,972 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+2020-06-26 16:08:44,972 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.39711506498861127 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+2020-06-26 16:08:45,411 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+2020-06-26 16:08:45,411 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.43888285898719914 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+2020-06-26 16:08:45,935 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+2020-06-26 16:08:45,935 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5234814509894932 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+2020-06-26 16:08:46,437 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+2020-06-26 16:08:46,437 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5019941999926232 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+2020-06-26 16:08:46,491 - VegET_CLASS - INFO - today is 285
+2020-06-26 16:08:46,826 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3342124979972141 - tiles/tile40N-80E_chip40N-78E/swi_1999285.tif
+2020-06-26 16:08:47,233 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.40663811400008854 - tiles/tile40N-80E_chip40N-78E/snwpk_1999285.tif
+2020-06-26 16:08:47,464 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2312049749889411 - tiles/tile40N-80E_chip40N-78E/rain_1999285.tif
+2020-06-26 16:08:47,729 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26420353799767327 - tiles/tile40N-80E_chip40N-78E/swe_1999285.tif
+2020-06-26 16:08:47,947 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.21834539300471079 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999285.tif
+2020-06-26 16:08:48,670 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7066818910097936 - tiles/tile40N-80E_chip40N-78E/dd_1999285.tif
+2020-06-26 16:08:49,077 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.40674161100469064 - tiles/tile40N-80E_chip40N-78E/srf_1999285.tif
+2020-06-26 16:08:49,459 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.320650811001542 - tiles/tile40N-80E_chip40N-78E/etasw_1999285.tif
+2020-06-26 16:08:49,683 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22435300500364974 - tiles/tile40N-80E_chip40N-78E/swf_1999285.tif
+2020-06-26 16:08:50,032 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34847577298933174 - tiles/tile40N-80E_chip40N-78E/etasw5_1999285.tif
+2020-06-26 16:08:50,264 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23159795900573954 - tiles/tile40N-80E_chip40N-78E/etc_1999285.tif
+2020-06-26 16:08:50,890 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.6260072279983433 - tiles/tile40N-80E_chip40N-78E/netet_1999285.tif
+2020-06-26 16:08:50,905 - VegET_CLASS - INFO - DAY - TIME - 8.820510994992219 - 1999-10-12 00:00:00
+2020-06-26 16:08:50,905 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:08:52,718 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+2020-06-26 16:08:52,718 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.8127015579957515 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+2020-06-26 16:08:53,501 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+2020-06-26 16:08:53,501 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7829198560066288 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+2020-06-26 16:08:53,786 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+2020-06-26 16:08:53,787 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2853479140030686 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+2020-06-26 16:08:54,212 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+2020-06-26 16:08:54,212 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4253633789921878 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+2020-06-26 16:08:54,624 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+2020-06-26 16:08:54,625 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4122227420011768 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+2020-06-26 16:08:55,057 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+2020-06-26 16:08:55,057 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.43240361599600874 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+2020-06-26 16:08:55,104 - VegET_CLASS - INFO - today is 286
+2020-06-26 16:08:55,365 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2612797879992286 - tiles/tile40N-80E_chip40N-78E/swi_1999286.tif
+2020-06-26 16:08:55,645 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27962866201414727 - tiles/tile40N-80E_chip40N-78E/snwpk_1999286.tif
+2020-06-26 16:08:55,934 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28856674599228427 - tiles/tile40N-80E_chip40N-78E/rain_1999286.tif
+2020-06-26 16:08:56,180 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24604789599834476 - tiles/tile40N-80E_chip40N-78E/swe_1999286.tif
+2020-06-26 16:08:56,388 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2073224939958891 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999286.tif
+2020-06-26 16:08:56,773 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3681371639977442 - tiles/tile40N-80E_chip40N-78E/dd_1999286.tif
+2020-06-26 16:08:58,415 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 1.6425674150086707 - tiles/tile40N-80E_chip40N-78E/srf_1999286.tif
+2020-06-26 16:08:58,805 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.32625224300136324 - tiles/tile40N-80E_chip40N-78E/etasw_1999286.tif
+2020-06-26 16:08:59,166 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.36040969799796585 - tiles/tile40N-80E_chip40N-78E/swf_1999286.tif
+2020-06-26 16:08:59,437 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2706669160106685 - tiles/tile40N-80E_chip40N-78E/etasw5_1999286.tif
+2020-06-26 16:08:59,874 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.43746431900945026 - tiles/tile40N-80E_chip40N-78E/etc_1999286.tif
+2020-06-26 16:09:00,142 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26771038900187705 - tiles/tile40N-80E_chip40N-78E/netet_1999286.tif
+2020-06-26 16:09:00,156 - VegET_CLASS - INFO - DAY - TIME - 9.250957001990173 - 1999-10-13 00:00:00
+2020-06-26 16:09:00,156 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:09:02,029 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+2020-06-26 16:09:02,029 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.873227196992957 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+2020-06-26 16:09:02,840 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+2020-06-26 16:09:02,840 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8100008699984755 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+2020-06-26 16:09:03,127 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+2020-06-26 16:09:03,127 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.28710187498654705 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+2020-06-26 16:09:03,515 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+2020-06-26 16:09:03,515 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3881475250091171 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+2020-06-26 16:09:04,039 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+2020-06-26 16:09:04,040 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.5240058199997293 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+2020-06-26 16:09:04,427 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+2020-06-26 16:09:04,427 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3870138530037366 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+2020-06-26 16:09:04,484 - VegET_CLASS - INFO - today is 287
+2020-06-26 16:09:04,789 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3049120950017823 - tiles/tile40N-80E_chip40N-78E/swi_1999287.tif
+2020-06-26 16:09:05,050 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26040842599468306 - tiles/tile40N-80E_chip40N-78E/snwpk_1999287.tif
+2020-06-26 16:09:05,435 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3852740599977551 - tiles/tile40N-80E_chip40N-78E/rain_1999287.tif
+2020-06-26 16:09:05,776 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3408349620003719 - tiles/tile40N-80E_chip40N-78E/swe_1999287.tif
+2020-06-26 16:09:06,098 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.32153737399494275 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999287.tif
+2020-06-26 16:09:06,441 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3264531659951899 - tiles/tile40N-80E_chip40N-78E/dd_1999287.tif
+2020-06-26 16:09:07,007 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5666646639874671 - tiles/tile40N-80E_chip40N-78E/srf_1999287.tif
+2020-06-26 16:09:07,321 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2535433729935903 - tiles/tile40N-80E_chip40N-78E/etasw_1999287.tif
+2020-06-26 16:09:08,044 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7231048130051931 - tiles/tile40N-80E_chip40N-78E/swf_1999287.tif
+2020-06-26 16:09:08,391 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3468870429933304 - tiles/tile40N-80E_chip40N-78E/etasw5_1999287.tif
+2020-06-26 16:09:08,659 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26760217199625913 - tiles/tile40N-80E_chip40N-78E/etc_1999287.tif
+2020-06-26 16:09:08,953 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2941565420042025 - tiles/tile40N-80E_chip40N-78E/netet_1999287.tif
+2020-06-26 16:09:08,968 - VegET_CLASS - INFO - DAY - TIME - 8.811638319006306 - 1999-10-14 00:00:00
+2020-06-26 16:09:08,969 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:09:10,650 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+2020-06-26 16:09:10,650 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6811976409953786 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+2020-06-26 16:09:11,264 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+2020-06-26 16:09:11,264 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6132305770006496 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+2020-06-26 16:09:11,533 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+2020-06-26 16:09:11,533 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2687616240000352 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med284.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet284.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999284.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_284.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_284.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_284.tif
+data shape = (962, 962)
+1999 10 11
+today is 284
+swout swi_1999284.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med285.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet285.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999285.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_285.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_285.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_285.tif
+data shape = (962, 962)
+1999 10 12
+today is 285
+swout swi_1999285.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med286.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet286.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999286.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_286.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_286.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_286.tif
+data shape = (962, 962)
+1999 10 13
+today is 286
+swout swi_1999286.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med287.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet287.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999287.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_287.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_287.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_287.tif
+data shape = (962, 962)
+1999 10 14
+today is 287
+swout swi_1999287.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med288.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet288.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999288.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif2020-06-26 16:09:12,024 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif
+2020-06-26 16:09:12,024 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4906580719980411 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_288.tif
+2020-06-26 16:09:12,433 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+2020-06-26 16:09:12,434 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4093560979963513 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+2020-06-26 16:09:12,802 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+2020-06-26 16:09:12,802 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.36782730399863794 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+2020-06-26 16:09:12,850 - VegET_CLASS - INFO - today is 288
+2020-06-26 16:09:13,296 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.44491651900170837 - tiles/tile40N-80E_chip40N-78E/swi_1999288.tif
+2020-06-26 16:09:13,585 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28964148499653675 - tiles/tile40N-80E_chip40N-78E/snwpk_1999288.tif
+2020-06-26 16:09:13,851 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.265033976000268 - tiles/tile40N-80E_chip40N-78E/rain_1999288.tif
+2020-06-26 16:09:14,156 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.30524435799452476 - tiles/tile40N-80E_chip40N-78E/swe_1999288.tif
+2020-06-26 16:09:14,557 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4005619430099614 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999288.tif
+2020-06-26 16:09:14,871 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29751713600126095 - tiles/tile40N-80E_chip40N-78E/dd_1999288.tif
+2020-06-26 16:09:15,122 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2508005310082808 - tiles/tile40N-80E_chip40N-78E/srf_1999288.tif
+2020-06-26 16:09:15,580 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.38581956100824755 - tiles/tile40N-80E_chip40N-78E/etasw_1999288.tif
+2020-06-26 16:09:15,854 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2731188790057786 - tiles/tile40N-80E_chip40N-78E/swf_1999288.tif
+2020-06-26 16:09:16,165 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.31083404799574055 - tiles/tile40N-80E_chip40N-78E/etasw5_1999288.tif
+2020-06-26 16:09:16,542 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.37651043200457934 - tiles/tile40N-80E_chip40N-78E/etc_1999288.tif
+2020-06-26 16:09:16,844 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3016063289978774 - tiles/tile40N-80E_chip40N-78E/netet_1999288.tif
+2020-06-26 16:09:16,857 - VegET_CLASS - INFO - DAY - TIME - 7.889037911008927 - 1999-10-15 00:00:00
+2020-06-26 16:09:16,857 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:09:18,619 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+2020-06-26 16:09:18,619 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.7615243539912626 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+2020-06-26 16:09:19,323 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+2020-06-26 16:09:19,323 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7042673609976191 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+2020-06-26 16:09:19,645 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+2020-06-26 16:09:19,645 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.32111304500722326 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+2020-06-26 16:09:20,024 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+2020-06-26 16:09:20,024 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3786444389988901 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+2020-06-26 16:09:20,375 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+2020-06-26 16:09:20,376 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3515568169968901 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+2020-06-26 16:09:20,692 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+2020-06-26 16:09:20,693 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.31687615100236144 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+2020-06-26 16:09:20,738 - VegET_CLASS - INFO - today is 289
+2020-06-26 16:09:21,048 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3103672900033416 - tiles/tile40N-80E_chip40N-78E/swi_1999289.tif
+2020-06-26 16:09:21,439 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.39032971099368297 - tiles/tile40N-80E_chip40N-78E/snwpk_1999289.tif
+2020-06-26 16:09:21,725 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2862408220098587 - tiles/tile40N-80E_chip40N-78E/rain_1999289.tif
+2020-06-26 16:09:22,070 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3440457850083476 - tiles/tile40N-80E_chip40N-78E/swe_1999289.tif
+2020-06-26 16:09:22,657 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5868690759962192 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999289.tif
+2020-06-26 16:09:22,983 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.30898565200914163 - tiles/tile40N-80E_chip40N-78E/dd_1999289.tif
+2020-06-26 16:09:23,336 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.35254709600121714 - tiles/tile40N-80E_chip40N-78E/srf_1999289.tif
+2020-06-26 16:09:23,667 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2688654129888164 - tiles/tile40N-80E_chip40N-78E/etasw_1999289.tif
+2020-06-26 16:09:24,055 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.38789137499406934 - tiles/tile40N-80E_chip40N-78E/swf_1999289.tif
+2020-06-26 16:09:24,329 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2731493250030326 - tiles/tile40N-80E_chip40N-78E/etasw5_1999289.tif
+2020-06-26 16:09:24,676 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3470079109974904 - tiles/tile40N-80E_chip40N-78E/etc_1999289.tif
+2020-06-26 16:09:24,946 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2696872710075695 - tiles/tile40N-80E_chip40N-78E/netet_1999289.tif
+2020-06-26 16:09:24,960 - VegET_CLASS - INFO - DAY - TIME - 8.103166322995094 - 1999-10-16 00:00:00
+2020-06-26 16:09:24,961 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:09:26,933 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+2020-06-26 16:09:26,934 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9727829289913643 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+2020-06-26 16:09:27,592 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+2020-06-26 16:09:27,592 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6582066510018194 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+2020-06-26 16:09:27,978 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+2020-06-26 16:09:27,978 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.38609009300125763 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+2020-06-26 16:09:28,380 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+2020-06-26 16:09:28,380 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4012161249993369 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+2020-06-26 16:09:28,763 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+2020-06-26 16:09:28,764 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3836546980019193 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+2020-06-26 16:09:29,176 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+2020-06-26 16:09:29,177 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4131456039904151 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+2020-06-26 16:09:29,219 - VegET_CLASS - INFO - today is 290
+2020-06-26 16:09:29,661 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4412118750042282 - tiles/tile40N-80E_chip40N-78E/swi_1999290.tif
+2020-06-26 16:09:29,899 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2380472929944517 - tiles/tile40N-80E_chip40N-78E/snwpk_1999290.tif
+2020-06-26 16:09:30,159 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2599450209963834 - tiles/tile40N-80E_chip40N-78E/rain_1999290.tif
+2020-06-26 16:09:48,411 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 18.25147019600263 - tiles/tile40N-80E_chip40N-78E/swe_1999290.tif
+2020-06-26 16:09:48,684 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2725226820039097 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999290.tif
+2020-06-26 16:09:48,922 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2212750680046156 - tiles/tile40N-80E_chip40N-78E/dd_1999290.tif
+2020-06-26 16:09:49,397 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4747878250054782 - tiles/tile40N-80E_chip40N-78E/srf_1999290.tif
+2020-06-26 16:09:49,745 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28349176699703094 - tiles/tile40N-80E_chip40N-78E/etasw_1999290.tif
+2020-06-26 16:09:50,049 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3040544819959905 - tiles/tile40N-80E_chip40N-78E/swf_1999290.tif
+2020-06-26 16:09:50,309 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.25953555799787864 - tiles/tile40N-80E_chip40N-78E/etasw5_1999290.tif
+2020-06-26 16:09:50,536 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.226694397002575 - tiles/tile40N-80E_chip40N-78E/etc_1999290.tif
+2020-06-26 16:09:50,872 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33592178201070055 - tiles/tile40N-80E_chip40N-78E/netet_1999290.tif
+2020-06-26 16:09:50,886 - VegET_CLASS - INFO - DAY - TIME - 25.92572954299976 - 1999-10-17 00:00:00
+2020-06-26 16:09:50,887 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:09:52,538 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+2020-06-26 16:09:52,539 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.6517766329925507 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+2020-06-26 16:09:53,154 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+2020-06-26 16:09:53,155 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6152426010085037 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+2020-06-26 16:09:53,449 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+2020-06-26 16:09:53,449 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.29411391699977685 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+2020-06-26 16:09:53,810 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+2020-06-26 16:09:53,810 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3612667900015367 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+2020-06-26 16:09:54,177 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+2020-06-26 16:09:54,178 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3670147420052672 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+2020-06-26 16:09:54,508 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+2020-06-26 16:09:54,508 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3303419110015966 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+2020-06-26 16:09:54,551 - VegET_CLASS - INFO - today is 291
+2020-06-26 16:09:54,871 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.31913224200252444 - tiles/tile40N-80E_chip40N-78E/swi_1999291.tif
+2020-06-26 16:09:55,165 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2944866119942162 - tiles/tile40N-80E_chip40N-78E/snwpk_1999291.tif
+2020-06-26 16:09:55,478 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3129856129962718 - tiles/tile40N-80E_chip40N-78E/rain_1999291.tif
+2020-06-26 16:09:55,743 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26400599800399505 - tiles/tile40N-80E_chip40N-78E/swe_1999291.tif
+2020-06-26 16:09:56,115 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.37235971400514245 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999291.tif
+2020-06-26 16:09:56,390 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.25605928600998595 - tiles/tile40N-80E_chip40N-78E/dd_1999291.tif
+2020-06-26 16:09:56,725 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33504839200759307 - tiles/tile40N-80E_chip40N-78E/srf_1999291.tif
+2020-06-26 16:09:57,413 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.6257350139931077 - tiles/tile40N-80E_chip40N-78E/etasw_1999291.tif
+2020-06-26 16:09:57,951 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5371720590046607 - tiles/tile40N-80E_chip40N-78E/swf_1999291.tif
+2020-06-26 16:09:58,374 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4232422850036528 - tiles/tile40N-80E_chip40N-78E/etasw5_1999291.tif
+2020-06-26 16:09:58,692 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.31772398301109206 - tiles/tile40N-80E_chip40N-78E/etc_1999291.tif
+2020-06-26 16:09:58,969 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27716700499877334 - tiles/tile40N-80E_chip40N-78E/netet_1999291.tif
+2020-06-26 16:09:58,984 - VegET_CLASS - INFO - DAY - TIME - 8.097698557990952 - 1999-10-18 00:00:00
+2020-06-26 16:09:58,985 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:10:00,558 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+2020-06-26 16:10:00,558 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.5733383059996413 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+2020-06-26 16:10:01,813 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+2020-06-26 16:10:01,814 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.2552689220028697 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+2020-06-26 16:10:02,436 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+2020-06-26 16:10:02,436 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.622207256994443 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+2020-06-26 16:10:02,882 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+2020-06-26 16:10:02,882 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4455433879920747 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+2020-06-26 16:10:03,246 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+2020-06-26 16:10:03,246 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3638632880029036 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+2020-06-26 16:10:03,663 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+2020-06-26 16:10:03,663 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4159667920030188 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+2020-06-26 16:10:03,720 - VegET_CLASS - INFO - today is 292
+2020-06-26 16:10:04,149 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4288655650016153 - tiles/tile40N-80E_chip40N-78E/swi_1999292.tif
+2020-06-26 16:10:04,413 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.26396126599865966 - tiles/tile40N-80E_chip40N-78E/snwpk_1999292.tif
+2020-06-26 16:10:05,309 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.8956350090011256 - tiles/tile40N-80E_chip40N-78E/rain_1999292.tif
+2020-06-26 16:10:05,543 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.233214552004938 - tiles/tile40N-80E_chip40N-78E/swe_1999292.tif
+2020-06-26 16:10:05,881 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3377841290057404 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999292.tif
+2020-06-26 16:10:06,220 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3214221680100309 - tiles/tile40N-80E_chip40N-78E/dd_1999292.tif
+2020-06-26 16:10:06,539 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3187663519929629 - tiles/tile40N-80E_chip40N-78E/srf_1999292.tif
+2020-06-26 16:12:19,709 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 133.1047799480002 - tiles/tile40N-80E_chip40N-78E/etasw_1999292.tif
+
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_288.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_288.tif
+data shape = (962, 962)
+1999 10 15
+today is 288
+swout swi_1999288.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med289.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet289.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999289.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_289.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_289.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_289.tif
+data shape = (962, 962)
+1999 10 16
+today is 289
+swout swi_1999289.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med290.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet290.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999290.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_290.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_290.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_290.tif
+data shape = (962, 962)
+1999 10 17
+today is 290
+swout swi_1999290.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med291.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet291.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999291.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_291.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_291.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_291.tif
+data shape = (962, 962)
+1999 10 18
+today is 291
+swout swi_1999291.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med292.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet292.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999292.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_292.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_292.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_292.tif
+data shape = (962, 962)
+1999 10 19
+today is 292
+swout swi_1999292.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']2020-06-26 16:12:20,052 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3425813229987398 - tiles/tile40N-80E_chip40N-78E/swf_1999292.tif
+2020-06-26 16:12:20,301 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24875138800416607 - tiles/tile40N-80E_chip40N-78E/etasw5_1999292.tif
+2020-06-26 16:12:20,888 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5870955009886529 - tiles/tile40N-80E_chip40N-78E/etc_1999292.tif
+2020-06-26 16:12:21,172 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28343425900675356 - tiles/tile40N-80E_chip40N-78E/netet_1999292.tif
+2020-06-26 16:12:21,186 - VegET_CLASS - INFO - DAY - TIME - 142.20137116099067 - 1999-10-19 00:00:00
+2020-06-26 16:12:21,186 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:12:23,440 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+2020-06-26 16:12:23,440 - COOL RASTERMANAGER - INFO - WARP - TIME - 2.2536425500002224 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+2020-06-26 16:12:24,121 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+2020-06-26 16:12:24,121 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6807406309962971 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+2020-06-26 16:12:24,467 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+2020-06-26 16:12:24,468 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.34643631499784533 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+2020-06-26 16:12:24,864 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+2020-06-26 16:12:24,864 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.39603984900168143 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+2020-06-26 16:12:25,260 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+2020-06-26 16:12:25,260 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3957724549982231 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+2020-06-26 16:12:25,671 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+2020-06-26 16:12:25,671 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4107825910032261 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+2020-06-26 16:12:25,715 - VegET_CLASS - INFO - today is 293
+2020-06-26 16:12:26,101 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.38583864299289417 - tiles/tile40N-80E_chip40N-78E/swi_1999293.tif
+2020-06-26 16:12:26,502 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.401065206999192 - tiles/tile40N-80E_chip40N-78E/snwpk_1999293.tif
+2020-06-26 16:12:26,988 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.48588964100054 - tiles/tile40N-80E_chip40N-78E/rain_1999293.tif
+2020-06-26 16:12:27,208 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2196221429912839 - tiles/tile40N-80E_chip40N-78E/swe_1999293.tif
+2020-06-26 16:12:27,549 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3405014290037798 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999293.tif
+2020-06-26 16:12:27,988 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.42293831999995746 - tiles/tile40N-80E_chip40N-78E/dd_1999293.tif
+2020-06-26 16:12:28,207 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.21900930699484888 - tiles/tile40N-80E_chip40N-78E/srf_1999293.tif
+2020-06-26 16:12:28,642 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.37432930000068154 - tiles/tile40N-80E_chip40N-78E/etasw_1999293.tif
+2020-06-26 16:12:28,914 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27090889400278684 - tiles/tile40N-80E_chip40N-78E/swf_1999293.tif
+2020-06-26 16:12:29,133 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2197319359984249 - tiles/tile40N-80E_chip40N-78E/etasw5_1999293.tif
+2020-06-26 16:12:29,346 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2125755279994337 - tiles/tile40N-80E_chip40N-78E/etc_1999293.tif
+2020-06-26 16:12:29,673 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3267610809998587 - tiles/tile40N-80E_chip40N-78E/netet_1999293.tif
+2020-06-26 16:12:29,688 - VegET_CLASS - INFO - DAY - TIME - 8.50194749799266 - 1999-10-20 00:00:00
+2020-06-26 16:12:29,688 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:12:31,601 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med294.250_m_NDVI.tif
+2020-06-26 16:12:31,601 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9127347680041566 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med294.250_m_NDVI.tif
+2020-06-26 16:12:32,370 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet294.tif
+2020-06-26 16:12:32,370 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7687093099957565 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet294.tif
+2020-06-26 16:12:32,628 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999294.tif
+2020-06-26 16:12:32,629 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2581922600074904 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999294.tif
+2020-06-26 16:12:32,968 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_294.tif
+2020-06-26 16:12:32,969 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3398067880043527 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_294.tif
+2020-06-26 16:12:33,351 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_294.tif
+2020-06-26 16:12:33,351 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.38242231799813453 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_294.tif
+2020-06-26 16:12:33,786 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_294.tif
+2020-06-26 16:12:33,786 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4345825489872368 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_294.tif
+2020-06-26 16:12:33,830 - VegET_CLASS - INFO - today is 294
+2020-06-26 16:12:34,104 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2742875319963787 - tiles/tile40N-80E_chip40N-78E/swi_1999294.tif
+2020-06-26 16:12:34,324 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.21875717099464964 - tiles/tile40N-80E_chip40N-78E/snwpk_1999294.tif
+2020-06-26 16:12:34,576 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2518271130102221 - tiles/tile40N-80E_chip40N-78E/rain_1999294.tif
+2020-06-26 16:12:34,926 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3503209230111679 - tiles/tile40N-80E_chip40N-78E/swe_1999294.tif
+2020-06-26 16:12:35,466 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.5399786530033452 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999294.tif
+2020-06-26 16:12:35,815 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33164570599910803 - tiles/tile40N-80E_chip40N-78E/dd_1999294.tif
+2020-06-26 16:12:36,127 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3121264850051375 - tiles/tile40N-80E_chip40N-78E/srf_1999294.tif
+2020-06-26 16:12:36,478 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.28875662699283566 - tiles/tile40N-80E_chip40N-78E/etasw_1999294.tif
+2020-06-26 16:12:36,727 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2482605120021617 - tiles/tile40N-80E_chip40N-78E/swf_1999294.tif
+2020-06-26 16:12:37,106 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3786865599977318 - tiles/tile40N-80E_chip40N-78E/etasw5_1999294.tif
+2020-06-26 16:12:37,404 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2984102219925262 - tiles/tile40N-80E_chip40N-78E/etc_1999294.tif
+2020-06-26 16:12:38,158 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7538768130034441 - tiles/tile40N-80E_chip40N-78E/netet_1999294.tif
+2020-06-26 16:12:38,172 - VegET_CLASS - INFO - DAY - TIME - 8.48332554200897 - 1999-10-21 00:00:00
+2020-06-26 16:12:38,172 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:12:40,150 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med295.250_m_NDVI.tif
+2020-06-26 16:12:40,150 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9783139580104034 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med295.250_m_NDVI.tif
+2020-06-26 16:12:40,868 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet295.tif
+2020-06-26 16:12:40,868 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.7170135810010834 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet295.tif
+2020-06-26 16:12:41,175 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999295.tif
+2020-06-26 16:12:41,176 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.30775209800049197 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999295.tif
+2020-06-26 16:12:41,545 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_295.tif
+2020-06-26 16:12:41,545 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.36887486100022215 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_295.tif
+2020-06-26 16:12:42,018 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_295.tif
+2020-06-26 16:12:42,019 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.47346927200851496 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_295.tif
+2020-06-26 16:12:42,365 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_295.tif
+2020-06-26 16:12:42,365 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3466093369934242 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_295.tif
+2020-06-26 16:12:42,410 - VegET_CLASS - INFO - today is 295
+2020-06-26 16:12:42,635 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22559461600030772 - tiles/tile40N-80E_chip40N-78E/swi_1999295.tif
+2020-06-26 16:12:43,052 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.416807481989963 - tiles/tile40N-80E_chip40N-78E/snwpk_1999295.tif
+2020-06-26 16:12:43,258 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.20496757900400553 - tiles/tile40N-80E_chip40N-78E/rain_1999295.tif
+2020-06-26 16:12:43,471 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.21323594100249466 - tiles/tile40N-80E_chip40N-78E/swe_1999295.tif
+2020-06-26 16:12:43,723 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.25177692499710247 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999295.tif
+2020-06-26 16:12:43,963 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22382103599375114 - tiles/tile40N-80E_chip40N-78E/dd_1999295.tif
+2020-06-26 16:12:44,296 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3325596240028972 - tiles/tile40N-80E_chip40N-78E/srf_1999295.tif
+2020-06-26 16:12:44,640 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27734877599868923 - tiles/tile40N-80E_chip40N-78E/etasw_1999295.tif
+2020-06-26 16:12:44,891 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2502989020140376 - tiles/tile40N-80E_chip40N-78E/swf_1999295.tif
+2020-06-26 16:12:45,242 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3503782119951211 - tiles/tile40N-80E_chip40N-78E/etasw5_1999295.tif
+2020-06-26 16:12:45,471 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.22932474900153466 - tiles/tile40N-80E_chip40N-78E/etc_1999295.tif
+2020-06-26 16:12:45,880 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4086589590006042 - tiles/tile40N-80E_chip40N-78E/netet_1999295.tif
+2020-06-26 16:12:45,895 - VegET_CLASS - INFO - DAY - TIME - 7.722798752991366 - 1999-10-22 00:00:00
+2020-06-26 16:12:45,895 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:12:47,799 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med296.250_m_NDVI.tif
+2020-06-26 16:12:47,799 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.903801399996155 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med296.250_m_NDVI.tif
+2020-06-26 16:12:48,635 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet296.tif
+2020-06-26 16:12:48,635 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.8359379460016498 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet296.tif
+2020-06-26 16:12:48,915 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999296.tif
+2020-06-26 16:12:48,915 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.2797118700109422 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999296.tif
+2020-06-26 16:12:49,359 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_296.tif
+2020-06-26 16:12:49,359 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.44345185499696527 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_296.tif
+2020-06-26 16:12:50,008 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_296.tif
+2020-06-26 16:12:50,008 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6488521760038566 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_296.tif
+2020-06-26 16:12:50,435 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_296.tif
+2020-06-26 16:12:50,435 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.4265868079965003 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_296.tif
+2020-06-26 16:12:50,481 - VegET_CLASS - INFO - today is 296
+2020-06-26 16:12:50,817 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.33548230001179036 - tiles/tile40N-80E_chip40N-78E/swi_1999296.tif
+2020-06-26 16:12:51,033 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2158389809919754 - tiles/tile40N-80E_chip40N-78E/snwpk_1999296.tif
+2020-06-26 16:12:51,264 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23136292799608782 - tiles/tile40N-80E_chip40N-78E/rain_1999296.tif
+2020-06-26 16:12:51,558 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2938379350089235 - tiles/tile40N-80E_chip40N-78E/swe_1999296.tif
+2020-06-26 16:12:51,990 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.43169340600434225 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999296.tif
+2020-06-26 16:12:52,361 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.35453825499280356 - tiles/tile40N-80E_chip40N-78E/dd_1999296.tif
+2020-06-26 16:12:52,709 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34765567901195027 - tiles/tile40N-80E_chip40N-78E/srf_1999296.tif
+2020-06-26 16:12:53,116 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3327345629950287 - tiles/tile40N-80E_chip40N-78E/etasw_1999296.tif
+2020-06-26 16:12:53,357 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.24070494700572453 - tiles/tile40N-80E_chip40N-78E/swf_1999296.tif
+2020-06-26 16:12:53,685 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3279164639970986 - tiles/tile40N-80E_chip40N-78E/etasw5_1999296.tif
+2020-06-26 16:12:54,119 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.4337559709965717 - tiles/tile40N-80E_chip40N-78E/etc_1999296.tif
+2020-06-26 16:12:54,489 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3699082620005356 - tiles/tile40N-80E_chip40N-78E/netet_1999296.tif
+2020-06-26 16:12:54,507 - VegET_CLASS - INFO - DAY - TIME - 8.612063104999834 - 1999-10-23 00:00:00
+2020-06-26 16:12:54,507 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:12:56,501 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med297.250_m_NDVI.tif
+2020-06-26 16:12:56,501 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.9932841840054607 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med297.250_m_NDVI.tif
+2020-06-26 16:12:57,412 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet297.tif
+2020-06-26 16:12:57,412 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.9109627330035437 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet297.tif
+2020-06-26 16:12:57,741 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999297.tif
+2020-06-26 16:12:57,741 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3285048289981205 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999297.tif
+2020-06-26 16:12:58,093 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_297.tif
+2020-06-26 16:12:58,093 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3521336080011679 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_297.tif
+2020-06-26 16:12:58,509 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_297.tif
+2020-06-26 16:12:58,509 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.41607463799300604 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_297.tif
+2020-06-26 16:12:58,843 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_297.tif
+2020-06-26 16:12:58,843 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3331950309948297 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_297.tif
+2020-06-26 16:12:58,885 - VegET_CLASS - INFO - today is 297
+
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med293.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet293.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999293.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_293.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_293.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_293.tif
+data shape = (962, 962)
+1999 10 20
+today is 293
+swout swi_1999293.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med294.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet294.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999294.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_294.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_294.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_294.tif
+data shape = (962, 962)
+1999 10 21
+today is 294
+swout swi_1999294.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med295.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet295.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999295.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_295.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_295.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_295.tif
+data shape = (962, 962)
+1999 10 22
+today is 295
+swout swi_1999295.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med296.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet296.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999296.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_296.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_296.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_296.tif
+data shape = (962, 962)
+1999 10 23
+today is 296
+swout swi_1999296.tif
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+(962, 962)
+(962, 962)
+(962, 962)
+(962, 962)
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+['tiles', 'tile40N-80E_chip40N-78E']
+bucket prefix = tiles/tile40N-80E_chip40N-78E
+-------------------------------
+output monthly is False and output yearly is False
+warpfile /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med297.250_m_NDVI.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet297.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999297.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_297.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_297.tif
+data shape = (962, 962)
+warpfile /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_297.tif
+data shape = (962, 962)
+19992020-06-26 16:12:59,194 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.30821751900657546 - tiles/tile40N-80E_chip40N-78E/swi_1999297.tif
+2020-06-26 16:12:59,425 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2309418660006486 - tiles/tile40N-80E_chip40N-78E/snwpk_1999297.tif
+2020-06-26 16:12:59,721 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2962068850029027 - tiles/tile40N-80E_chip40N-78E/rain_1999297.tif
+2020-06-26 16:13:00,083 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3608632499963278 - tiles/tile40N-80E_chip40N-78E/swe_1999297.tif
+2020-06-26 16:13:00,315 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23177107100491412 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999297.tif
+2020-06-26 16:13:00,691 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3585831339878496 - tiles/tile40N-80E_chip40N-78E/dd_1999297.tif
+2020-06-26 16:13:01,046 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.35429406800540164 - tiles/tile40N-80E_chip40N-78E/srf_1999297.tif
+2020-06-26 16:13:01,500 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3896460190007929 - tiles/tile40N-80E_chip40N-78E/etasw_1999297.tif
+2020-06-26 16:13:01,979 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.47874761500861496 - tiles/tile40N-80E_chip40N-78E/swf_1999297.tif
+2020-06-26 16:13:02,294 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3150488259998383 - tiles/tile40N-80E_chip40N-78E/etasw5_1999297.tif
+2020-06-26 16:13:02,525 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.23059693399409298 - tiles/tile40N-80E_chip40N-78E/etc_1999297.tif
+2020-06-26 16:13:02,953 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.42777191099594347 - tiles/tile40N-80E_chip40N-78E/netet_1999297.tif
+2020-06-26 16:13:02,969 - VegET_CLASS - INFO - DAY - TIME - 8.46135523999692 - 1999-10-24 00:00:00
+2020-06-26 16:13:02,969 - COOL RASTERMANAGER - INFO - _warp_inputs
+2020-06-26 16:13:04,853 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med298.250_m_NDVI.tif
+2020-06-26 16:13:04,853 - COOL RASTERMANAGER - INFO - WARP - TIME - 1.883943728011218 - /vsis3/dev-et-data/in/USA_data/NDVI_med2003_2017/med298.250_m_NDVI.tif
+2020-06-26 16:13:05,489 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet298.tif
+2020-06-26 16:13:05,490 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.6363071530067828 - /vsis3/dev-et-data/NA_data_for_cloud/ETo_mosaic/pet298.tif
+2020-06-26 16:13:05,811 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999298.tif
+2020-06-26 16:13:05,811 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.320898557009059 - /vsis3/dev-et-data/in/USA_data/precip_gridmet_tiffs/1999/prec_1999298.tif
+2020-06-26 16:13:06,161 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_298.tif
+2020-06-26 16:13:06,161 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.35023138600809034 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tavg_C_daily/tavg_298.tif
+2020-06-26 16:13:06,517 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_298.tif
+2020-06-26 16:13:06,517 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.3558029109990457 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmin_C_daily/tmin_298.tif
+2020-06-26 16:13:06,982 - COOL RASTERMANAGER - INFO - _warp_one Completed /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_298.tif
+2020-06-26 16:13:06,982 - COOL RASTERMANAGER - INFO - WARP - TIME - 0.46450920699862763 - /vsis3/dev-et-data/NA_data_for_cloud/Temperature/tmax_C_daily/tmax_298.tif
+2020-06-26 16:13:07,025 - VegET_CLASS - INFO - today is 298
+2020-06-26 16:13:07,336 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3106983030011179 - tiles/tile40N-80E_chip40N-78E/swi_1999298.tif
+2020-06-26 16:13:07,721 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3853950270131463 - tiles/tile40N-80E_chip40N-78E/snwpk_1999298.tif
+2020-06-26 16:13:07,992 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.2709048599936068 - tiles/tile40N-80E_chip40N-78E/rain_1999298.tif
+2020-06-26 16:13:08,285 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29265604200190865 - tiles/tile40N-80E_chip40N-78E/swe_1999298.tif
+2020-06-26 16:13:09,071 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.7850919100019382 - tiles/tile40N-80E_chip40N-78E/snowmelt_1999298.tif
+2020-06-26 16:13:09,360 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.27425076499639545 - tiles/tile40N-80E_chip40N-78E/dd_1999298.tif
+2020-06-26 16:13:09,723 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3626816729956772 - tiles/tile40N-80E_chip40N-78E/srf_1999298.tif
+2020-06-26 16:13:10,182 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.3934745350125013 - tiles/tile40N-80E_chip40N-78E/etasw_1999298.tif
+2020-06-26 16:13:10,608 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.42630122500122525 - tiles/tile40N-80E_chip40N-78E/swf_1999298.tif
+2020-06-26 16:13:10,957 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.34869199599779677 - tiles/tile40N-80E_chip40N-78E/etasw5_1999298.tif
+2020-06-26 16:13:11,262 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.30437512398930266 - tiles/tile40N-80E_chip40N-78E/etc_1999298.tif
+2020-06-26 16:13:11,553 - COOL RASTERMANAGER - INFO - OUTPUT - TIME - 0.29101894599443767 - tiles/tile40N-80E_chip40N-78E/netet_1999298.tif
+2020-06-26 16:13:11,566 - VegET_CLASS - INFO - DAY - TIME - 8.597508813007153 - 1999-10-25 00:00:00
+2020-06-26 16:13:11,567 - COOL RASTERMANAGER - INFO - _warp_inputs
