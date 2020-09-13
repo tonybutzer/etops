@@ -144,8 +144,8 @@ class GridMeister:
     def build_docker_run_bash(self, chip_list, optimize):
         print(chip_list)
 
-        vols = '-v /opt/etops/drb_40yr_tile_veget_c/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI'
-        image = 'tbutzer/40yr_veget_c'
+        vols = '-v /opt/etops/ward_sanford_20yr_veget_c/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI'
+        image = 'tbutzer/ward_sanford_c'
         cmds=[]
         for chip_name in chip_list:
             filename = make_filename(self.tile_name, chip_name, '.shp')

@@ -22,15 +22,12 @@ RUN \
 	pip install --no-cache fiona
 
 
-ENV TONYVERS=6.5
+ENV TONYVERS=6.6
 RUN mkdir -p /home/veget && cd /home/veget && git clone http://github.com/skagone/cloud-veg-et && \
 	(cd /home/veget/cloud-veg-et/veget/vegetLib; make build-root) && \
 	mkdir -p /home/veget/cloud-veg-et/veget/api_veget/log
 
-COPY AOI /home/veget/cloud-veg-et/veget/api_veget/AOI
-COPY 40yr_grid_config /home/veget/cloud-veg-et/veget/api_veget/running_config
-#COPY delaware_20_config /home/veget/cloud-veg-et/veget/api_veget/running_config
-#COPY sample_config /home/veget/cloud-veg-et/veget/api_veget/sample_config
+COPY grid_config /home/veget/cloud-veg-et/veget/api_veget/running_config
 
 RUN apt-get install ca-certificates && mkdir -p /etc/pki/tls/certs && \
 	cp /etc/ssl/certs/ca-certificates.crt /etc/pki/tls/certs/ca-bundle.crt

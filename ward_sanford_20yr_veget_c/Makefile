@@ -1,4 +1,4 @@
-Image=tbutzer/40yr_veget_c
+Image=tbutzer/ward_sanford_c
 
 build:
 	docker build -t ${Image} .

@@ -2,7 +2,7 @@ import sys
 from gridmeister import GridMeister
 
 
-tile = 'drb_tile_20yr_ward_sandford'
+tile = 'ward_sandford_20yr'
 
 optimize=True
 if len(sys.argv) > 2:
