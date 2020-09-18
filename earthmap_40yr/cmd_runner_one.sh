@@ -1,1 +1,0 @@
-docker run -i -v /opt/etops/ward_sanford_20yr_veget_c/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI tbutzer/ward_sanford_c python3 api_veget.py -c running_config -s ./AOI/ward_sandford_20yr_chip44N-78E.shp  ward_sandford_20yr_chip44N-78E  2>&1 | tee  ./log/ward_sandford_20yr_chip44N-78E.log&

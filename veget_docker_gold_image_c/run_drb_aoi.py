@@ -1,8 +1,12 @@
+import os
 import sys
 from gridmeister import GridMeister
 
 
-tile = 'ward_sandford_20yr'
+
+tile_cust=os.getcwd()
+tile_cust=tile_cust.split('/')[-1]
+tile = 'run_'+tile_cust
 
 optimize=True
 if len(sys.argv) > 2:
