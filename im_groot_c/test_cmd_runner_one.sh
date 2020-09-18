@@ -1,0 +1,1 @@
+docker run -i -v `pwd`/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI tbutzer/im_groot_c python3 api_veget.py -c running_config -s ./AOI/run_im_groot_c_chip44N-78E.shp  run_im_groot_c_chip44N-78E  2>&1 | tee  ./log/run_im_groot_c_chip44N-78E.log&
