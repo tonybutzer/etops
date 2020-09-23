@@ -1,5 +1,6 @@
 - [etops](#etops)
 - [synopsis](#synopsis)
+- [SCP HELP](#scp-help)
 - [References](#references)
 
 # etops
@@ -20,6 +21,35 @@ ET DevOps Repo - packaging and deploying cloud based veget
 7. bash cmd_...YOUR_RUN_NAME_HERE.sh
 8. Monitoring the running cloud docker container ensamble
 9. Tail the log files
+
+
+## scp help
+
+### example
+
+- scp -r -i c:\myhome\mypems\CHS-Butzer-Credentials-KeyPair.pem .\myconfig ubuntu@10.12.68.246:./dropbox
+
+
+DESCRIPTION         top
+
+     scp copies files between hosts on a network.  It uses ssh(1) for data
+     transfer, and uses the same authentication and provides the same secu‐
+     rity as ssh(1).  scp will ask for passwords or passphrases if they are
+     needed for authentication.
+
+     The source and target may be specified as a local pathname, a remote
+     host with optional path in the form [user@]host:[path], or a URI in the
+     form scp://[user@]host[:port][/path].  Local file names can be made
+     explicit using absolute or relative pathnames to avoid scp treating
+     file names containing ‘:’ as host specifiers.
+
+```
+ubuntu@ip-10-12-68-246:/opt/etops$ scp --help
+unknown option -- -
+usage: scp [-346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+```
 
 ## References
 
