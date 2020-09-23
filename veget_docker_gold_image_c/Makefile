@@ -24,8 +24,10 @@ config:
 	cp -r ~/dropbox/myconfig ./running_config
 
 model_prepare: config build
-	echo ${Dir}  ${Image}
-	echo bash cmd_runner_run_RUNN.sh
+	@echo ${Dir}  ${Image}
+	@echo TMUX is REALLY Nice -- even when the VPN is Not!
+	@echo bash cmd_runner_run_RUNN.sh
+	@echo bash cmd_runner_run_RUNN.sh
 
 
 
