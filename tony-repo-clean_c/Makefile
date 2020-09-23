@@ -1,4 +1,4 @@
-Dir=RUNN
+Dir=tony-repo-clean_c
 Image=tbutzer/${Dir}
 
 build:

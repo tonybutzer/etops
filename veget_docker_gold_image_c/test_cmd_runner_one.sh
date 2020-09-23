@@ -1,1 +1,0 @@
-docker run -i -v `pwd`/AOI:/home/veget/cloud-veg-et/veget/api_veget/AOI tbutzer/veget_docker_gold_image_c python3 api_veget.py -c running_config -s ./AOI/run_veget_docker_gold_image_c_chip44N-78E.shp  run_veget_docker_gold_image_c_chip44N-78E  2>&1 | tee  ./log/run_veget_docker_gold_image_c_chip44N-78E.log&

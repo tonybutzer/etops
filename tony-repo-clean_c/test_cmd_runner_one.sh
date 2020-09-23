@@ -1,0 +1,1 @@
+docker run -i -v `pwd`/AOI:/home/veget/cloud-veg-et/api_veget/AOI tbutzer/tony-repo-clean_c python3 api_veget.py -c running_config -s ./AOI/run_tony-repo-clean_c_chip44N-78E.shp  run_tony-repo-clean_c_chip44N-78E  2>&1 | tee  ./log/run_tony-repo-clean_c_chip44N-78E.log&
