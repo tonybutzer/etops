@@ -13,8 +13,8 @@ cloud_et_for_dummys:
 	echo please cd into runs/$${RUNN} and run -- make model_prepare
 
 publish:
-	#git remote set-url origin git@github.com:tonybutzer/etops.git
-	git remote set-url origin https://github.com/tonybutzer/etops.git
+	git remote set-url origin git@github.com:tonybutzer/etops.git
+	#git remote set-url origin https://github.com/tonybutzer/etops.git
 	git config --global user.email tonybutzer@gmail.com
 	git config --global user.name tonybutzer
 	git config --global push.default simple
