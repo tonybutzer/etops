@@ -11,6 +11,7 @@ cloud_et_for_dummys:
 	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Makefile; \
 	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Dockerfile; \
 	echo please cd into runs/$${RUNN} and run -- make model_prepare
+	echo I SAID PLEASE cd runs/$${RUNN} -- and run -- make model_prepare
 
 publish:
 	git remote set-url origin git@github.com:tonybutzer/etops.git
