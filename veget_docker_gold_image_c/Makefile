@@ -20,11 +20,12 @@ kill_all_containers:
 cmd:
 	python3 run_drb_aoi.py
 
+config:
+	cp -r ~/dropbox/myconfig ./running_config
 
-model_run:
+model_prepare: config build
 	echo ${Dir}  ${Image}
-	bash One_cmd_runner_one.sh
-	echo bash cmd_runner_run_veget_docker_gold_image_c.sh
+	echo bash cmd_runner_run_RUNN.sh
 
 
 

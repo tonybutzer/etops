@@ -9,7 +9,8 @@ cloud_et_for_dummys:
 	echo "FIXING THE MAKEFILE ..." ; \
 	cp -r ./veget_docker_gold_image_c runs/$${RUNN} ; \
 	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Makefile; \
-	echo please cd into runs/$${RUNN} and run -- make run_all
+	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Dockerfile; \
+	echo please cd into runs/$${RUNN} and run -- make model_prepare
 
 publish:
 	#git remote set-url origin git@github.com:tonybutzer/etops.git
