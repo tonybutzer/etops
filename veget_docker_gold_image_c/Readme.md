@@ -19,7 +19,7 @@ bash cmd_runner_drb_tile_7_20.sh
 
 1. Creates a custom docker image with the **latest** software CLONED from skagone/cloud_veg_et
 2. Divides the run into smaller geographic 2 degree BY 2 degree chunks - hardcoded for DRB!
-3. creates a BASH shell script file with the complicated docker runc command **(TIMES 12)**
+3. creates a BASH shell script file with the complicated docker run commands **(TIMES 12)** for DRB.
 
 ## Safety Tip
 
@@ -36,10 +36,5 @@ bash cmd_runner_drb_tile_7_20.sh
 # BUGS and Warnings
 
  - for logs to actually see the outputs use bash cmd_runner.......sh
- - the tile must have the string 'tile' for this software to work
+ - used to be that the tile must have the string 'tile' for this software to work - not relevant here
 
-# bash cmd...
-
-# run
-
-make dela_logs 2>&1 | tee log20.log
