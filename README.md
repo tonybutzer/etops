@@ -28,6 +28,12 @@ ET DevOps Repo - packaging and deploying cloud based veget
 		- cd runs/gabes_dog_try1
 		- cd ./log
 		- tail -f run_gabes_dog_try1_chip44N-78E.log
+		- man tail
+		- man head
+		- man grep
+		- man cat
+		- man more
+		- man man
 
 
 ## scp help
@@ -68,7 +74,7 @@ usage: scp [-346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
 	- docker kill $(docker ps -q)
 
 
-# Old Engineers Only Section
+# Old Section for curious Engineers Only Section
 ## References
 
 https://kevcodez.de/posts/2019-08-10-fluent-bit-docker-logging-driver-elasticsearch/
