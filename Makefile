@@ -10,7 +10,7 @@ cloud_et_for_dummys:
 	cp -r ./veget_docker_gold_image_c runs/$${RUNN} ; \
 	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Makefile; \
 	sed -i s/RUNN/$${RUNN}/g runs/$${RUNN}/Dockerfile; \
-	echo please cd into runs/$${RUNN} and run -- make model_prepare \
+	echo please cd into runs/$${RUNN} and run -- make model_prepare; \
 	echo I SAID PLEASE cd runs/$${RUNN} -- and run -- make model_prepare
 
 publish:
