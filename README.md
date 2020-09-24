@@ -67,7 +67,7 @@ usage: scp [-346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
 ## Docker Cheats
 
 1. listing docker running containers
-	- docker ps
+	- **docker ps**
 2. listing built or downloaded docker images
 	- docker image ls
 3. KILL all docker running containers
