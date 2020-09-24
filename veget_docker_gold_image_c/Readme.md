@@ -29,7 +29,7 @@ bash cmd_runner_drb_tile_7_20.sh
 > use tmux to maintain your session over a VPN (with timeouts)
 
 ## The code
-- gridmesiter.py is the main worker for this magic
+- gridmeister.py is the main worker for this magic
   - its modular so don't be scared!
 
 ### See the Makefile for more info
