@@ -15,9 +15,9 @@ ET DevOps Repo - packaging and deploying cloud based veget
 	- use scp and the destination directory is the docker ship - ubuntu@10.12.x.y:./dropbox
 3. ssh to the docker ship 10.12....
 4. cd /opt/etops
-	- make cloud_et_for_dummys
-5. cd runs/YOUR_RUN_NAME_HERE
-	- make model_prepare
+	- **make cloud_et_for_dummys**
+5. **cd runs**/YOUR_RUN_NAME_HERE
+	- **make model_prepare**
 6. tmux
 7. bash cmd_...YOUR_RUN_NAME_HERE.sh
 8. Monitoring the running cloud docker container ensamble SEE:
