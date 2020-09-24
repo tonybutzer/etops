@@ -22,7 +22,8 @@ ET DevOps Repo - packaging and deploying cloud based veget
 7. bash cmd_...YOUR_RUN_NAME_HERE.sh
 8. Monitoring the running cloud docker container ensamble SEE:
 	- [Docker Cheats](#docker-cheats)
-9. Tail the log files
+9. Tail the log files one for each container
+	- There in the ./log directory
 
 
 ## scp help
