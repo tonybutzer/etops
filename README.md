@@ -18,8 +18,8 @@ ET DevOps Repo - packaging and deploying cloud based veget
 	- **make cloud_et_for_dummys**
 5. **cd runs**/YOUR_RUN_NAME_HERE
 	- **make model_prepare**
-6. tmux
-7. bash cmd_...YOUR_RUN_NAME_HERE.sh
+6. **tmux** -- # you likely want to leverage tmux for long running things over the VPN
+7. **bash cmd_...YOUR_RUN_NAME_HERE.sh**
 8. Monitoring the running cloud docker container ensamble SEE:
 	- [Docker Cheats](#docker-cheats)
 9. Tail the log files one for each container
