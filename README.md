@@ -1,6 +1,7 @@
 - [etops](#etops)
 - [synopsis](#synopsis)
 - [SCP HELP](#scp-help)
+- [Docker Cheats](#docker-cheats)
 - [References](#references)
 
 # etops
@@ -51,6 +52,15 @@ usage: scp [-346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
            [[user@]host1:]file1 ... [[user@]host2:]file2
 ```
 
+## Docker Cheats
+
+1. listing docker running containers
+	- docker ps
+2. listing built or downloaded docker images
+	- docker image ls
+3. KILL all docker running containers
+	- docker kill $(docker ps -q)
+	
 ## References
 
 https://kevcodez.de/posts/2019-08-10-fluent-bit-docker-logging-driver-elasticsearch/
