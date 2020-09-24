@@ -1,4 +1,4 @@
-# Gold Directory
+# Gold Directory to be replicated/cloned/cp
 - This is the Gold Directory for Creating Custom Docker Runs for ET
 
 # TL;DR
@@ -20,6 +20,12 @@ bash cmd_runner_drb_tile_7_20.sh
 1. Creates a custom docker image with the **latest** software CLONED from skagone/cloud_veg_et
 2. Divides the run into smaller geographic 2 degree BY 2 degree chunks - hardcoded for DRB!
 3. creates a BASH shell script file with the complicated docker runc command **(TIMES 12)**
+
+## Safety Tip
+
+- tmux
+
+> use tmux to maintain your session over a VPN (with timeouts)
 
 ## The code
 - gridmesiter.py is the main worked for this magic
