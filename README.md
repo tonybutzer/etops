@@ -2,7 +2,7 @@
 - [synopsis](#synopsis)
 - [SCP HELP](#scp-help)
 - [Docker Cheats](#docker-cheats)
-- [References](#references)
+
 
 # etops
 ET DevOps Repo - packaging and deploying cloud based veget
@@ -60,7 +60,9 @@ usage: scp [-346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
 	- docker image ls
 3. KILL all docker running containers
 	- docker kill $(docker ps -q)
-	
+
+
+# Old Engineers Only Section
 ## References
 
 https://kevcodez.de/posts/2019-08-10-fluent-bit-docker-logging-driver-elasticsearch/
