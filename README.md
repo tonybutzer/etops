@@ -24,6 +24,10 @@ ET DevOps Repo - packaging and deploying cloud based veget
 	- [Docker Cheats](#docker-cheats)
 9. Tail the log files one for each container
 	- There in the ./log directory
+	- Example:
+		- cd runs/gabes_dog_try1
+		- cd ./log
+		- tail -f run_gabes_dog_try1_chip44N-78E.log
 
 
 ## scp help
