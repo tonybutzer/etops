@@ -1,6 +1,7 @@
 # Gold Directory to be replicated/cloned/cp
 - This is the Gold Directory for Creating Custom Docker Runs for ET
 
+[MAGIC](#lots-of-magic)
 # TL;DR
 
 ```
