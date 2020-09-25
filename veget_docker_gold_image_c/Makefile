@@ -21,7 +21,7 @@ cmd:
 	python3 run_drb_aoi.py
 
 config:
-	cp -r ~/dropbox/myconfig ./running_config
+	cp ~/dropbox/myconfig/* ./running_config/
 
 model_prepare: config build cmd
 	@echo ${Dir}  ${Image}
