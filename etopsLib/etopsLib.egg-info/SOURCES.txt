@@ -1,0 +1,8 @@
+setup.py
+etopsLib/degree_gridmeister.py
+etopsLib/numeric_gridmeister.py
+etopsLib.egg-info/PKG-INFO
+etopsLib.egg-info/SOURCES.txt
+etopsLib.egg-info/dependency_links.txt
+etopsLib.egg-info/requires.txt
+etopsLib.egg-info/top_level.txt
