@@ -1,4 +1,4 @@
-Dir=RUNN
+Dir=test_numeric_gridmeister_c
 Image=tbutzer/${Dir}
 
 build:

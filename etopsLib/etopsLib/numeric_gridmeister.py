@@ -143,13 +143,16 @@ class GridMeister:
         if not unit_chip:
             coord_list = _make_chip_poly(ul_lat, ul_lon, self.xchip_increment, self.ychip_increment)
             print(coord_list)
-            chip_name = 'chip' + str(ul_lat) + 'N' + str(ul_lon) + 'E'
-            filename = '{}.json'.format(chip_name)
+            #chip_name = 'chip' + str(ul_lat) + 'N' + str(ul_lon) + 'E'
+            chip_name = 'chip' + str(round(ul_lat, 2)) + 'N' + str(round(ul_lon, 2)) + 'E'
+            filename = make_filename(self.tile_name, chip_name, '.json')
+            #filename = '{}.json'.format(chip_name)
             print(filename)
         else:
             coord_list = _make_extent_poly(extent=self.extent)
-            chip_name = 'chip' + self.tile_name
-            filename = '{}.json'.format(chip_name)
+            filename = make_filename(self.tile_name, chip_name, '.json')
+            # chip_name = 'chip' + self.tile_name
+            # filename = '{}.json'.format(chip_name)
 
         full_filename = os.path.join(out_location, filename)
         print('the fulll FILENAME: ', full_filename)
@@ -166,7 +169,8 @@ class GridMeister:
         image = 'tbutzer/' + image_custom
         cmds=[]
         for chip_name in chip_list:
-            filename = make_filename(self.tile_name, chip_name, '.shp')
+            #filename = make_filename(self.tile_name, chip_name, '.shp')
+            filename = chip_name + '.shp'
             full_filename = self.aoi_dir + '/' + filename
             tile = filename.split('.shp')[0]
             cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {}  {}'.format(vols,image,full_filename,tile)
@@ -174,7 +178,8 @@ class GridMeister:
             if not optimize:
                 cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {} --optimize no  {}'.format(vols,image,full_filename,tile)
             print(cmd)
-            logname = make_filename(self.tile_name, chip_name, '.log')
+            #logname = make_filename(self.tile_name, chip_name, '.log')
+            logname = chip_name + '.log'
             # TODO -
             full_logname = './log' + '/' + logname
             print(full_logname)

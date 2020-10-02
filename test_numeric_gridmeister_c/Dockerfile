@@ -5,7 +5,7 @@ ENV VERS=RUNN
 RUN apt-get update && \
 	apt-get install -y vim
 
-ENV TONYVERS=6.9
+ENV TONYVERS=7.0
 RUN mkdir -p /home/veget \
 	&& cd /home/veget\
 	&& git clone http://github.com/skagone/cloud-veg-et \
