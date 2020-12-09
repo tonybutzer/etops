@@ -19,7 +19,7 @@ gm = GridMeister(tile)
 darin_extent = (-77.4226093565661415, 38.3565890497327118, -73.2480170973858122, 42.7829967799980722)
 smallest_extent_darin_greg = (-76.788, 38.362, -73.723, 42.809)
 
-gm.set_extent(darin_extent)
+gm.set_extent(smallest_extent_darin_greg)
 
 x_raster_res=0.002310233679679207525
 y_raster_res=0.002310233679679207525
