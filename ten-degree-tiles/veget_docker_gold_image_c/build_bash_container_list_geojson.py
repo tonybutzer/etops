@@ -1,6 +1,7 @@
 import os
 import sys
 import argparse
+import geopandas as gpd
 #from etopsLib.degree_gridmeister import GridMeister
 from etopsLib.numeric_gridmeister import GridMeister
 

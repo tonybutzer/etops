@@ -1,3 +1,8 @@
+git:
+	find . -size +10M
+	echo du -a ./ | sort -n -r | head -n 20
+	for file in `find . -size +10M`; do ls -lh $$file; done
+
 publish:
 	#git remote set-url origin git@github.com:tonybutzer/etops.git
 	git remote set-url origin https://github.com/tonybutzer/etops.git

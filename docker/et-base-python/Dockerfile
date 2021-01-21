@@ -3,12 +3,14 @@ FROM python
 ENV VERS=RUNN
 
 RUN apt-get update && \
-        apt-get install -y vim
+        apt-get install -y vim && \
+        apt-get install -y libgdal-dev
 
 RUN \
         pip install --no-cache matplotlib && \
         pip install --no-cache matplotlib_venn && \
         pip install --no-cache pandas && \
+        pip install --no-cache geopandas && \
         pip install --no-cache seaborn && \
         pip install --no-cache plotly && \
         pip install --no-cache plotly.express && \
