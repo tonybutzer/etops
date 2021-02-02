@@ -1,0 +1,1 @@
+docker run -i -v `pwd`/AOI:/home/veget/cloud-veg-et/api_veget/AOI tbutzer/drb150_1224_bigs python3 api_veget.py -c running_config -s ./AOI/run_drb150_1224_bigs_chip42.81N-76.79E.shp  run_drb150_1224_bigs_chip42.81N-76.79E  2>&1 | tee  ./log/run_drb150_1224_bigs_chip42.81N-76.79E.log&

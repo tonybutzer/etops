@@ -14,7 +14,7 @@ RUN \
         pip install --no-cache seaborn && \
         pip install --no-cache plotly && \
         pip install --no-cache plotly.express && \
-        pip install --no-cache rasterio && \
+        pip install "rasterio<1.2.0" && \
         pip install --no-cache awscli && \
         pip install --no-cache s3fs && \
         pip install --no-cache ffmpeg && \
