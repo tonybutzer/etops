@@ -1,6 +1,7 @@
 FROM python
 
 ENV VERS=RUNN
+ENV TONY=1.0
 
 RUN apt-get update && \
         apt-get install -y vim && \
@@ -14,7 +15,7 @@ RUN \
         pip install --no-cache seaborn && \
         pip install --no-cache plotly && \
         pip install --no-cache plotly.express && \
-        pip install "rasterio<1.2.0" && \
+        pip install "rasterio==1.1.6" && \
         pip install --no-cache awscli && \
         pip install --no-cache s3fs && \
         pip install --no-cache ffmpeg && \
