@@ -21,7 +21,7 @@ cmd:
 	python3 run_tile_aoi.py
 
 config:
-	cp ~/dropbox/myconfig/* ./running_config/
+	cp ~/dropbox/myconfig_CONUS/* ./running_config/
 
 model_prepare: config build cmd
 	@echo ${Dir}  ${Image}
