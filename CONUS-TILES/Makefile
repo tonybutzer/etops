@@ -10,11 +10,8 @@ publish:
 
 
 cloud_et_for_dummys:
-	@echo "What is your age?: "; \
-	read AGE; \
-	echo "Your age is " $${AGE}
-	@echo How dumb can you really be?
-	@echo "What is the name of this run? example drb40yr: "; \
+	@echo Thanks for playing VegET
+	@echo "What is the name of this run? example tile37_1: "; \
         read RUNN; \
         echo "Your run name is " $${RUNN}; \
 	echo "FIXING THE MAKEFILE ..." ; \

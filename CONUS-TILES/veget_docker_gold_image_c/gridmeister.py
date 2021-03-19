@@ -35,14 +35,14 @@ def _write_shp(geojson_filename):
 
 
 
-def _make_chip_poly(ul_lat, ul_lon, increment):
+def _make_chip_poly(ul_lat, ul_lon, lat_increment, lon_increment):
     coord_list = []
-    ul_lat = int(ul_lat)
-    ul_lon = int(ul_lon)
+    ul_lat = float(ul_lat)
+    ul_lon = float(ul_lon)
     ul_lon_lat = [ul_lon, ul_lat]
-    ur_lon_lat = [ul_lon + increment, ul_lat]
-    lr_lon_lat = [ul_lon + increment, ul_lat - increment]
-    ll_lon_lat = [ul_lon, ul_lat - increment]
+    ur_lon_lat = [ul_lon + lon_increment, ul_lat]
+    lr_lon_lat = [ul_lon + lon_increment, ul_lat - lat_increment]
+    ll_lon_lat = [ul_lon, ul_lat - lat_increment]
     print (ul_lon_lat)
     coord_list.append(ul_lon_lat)
     print (ur_lon_lat)
@@ -88,20 +88,30 @@ def make_filename(tile_name, chip_name, extension):
     return(filename)
 
 
-class GridMeister:
+class GridMeisterTile:
     """
     This class partitions a 10 degree tile into 2 degree chips
     """
 
-    def __init__(self, tile_name):
+    def __init__(self, tile_name, extent, divisor):
 
         self.tile_name = tile_name
-        self.chip_increment = 2
+        self.extent = extent
+
+        lon_width = abs(extent[0] - extent[2])
+        lat_width = (extent[3] - extent[1])
+
+        self.chip_lat_increment = lat_width / divisor
+        self.chip_lon_increment = lon_width / divisor
+
+        print(lon_width, lat_width)
+        print(self.chip_lon_increment, self.chip_lat_increment)
 
 
     def chip_list(self):
         CHIP_LIST = []
-        box={'left': -78, 'bottom':36 , 'right': -72, 'top': 44}
+        e = self.extent
+        box={'left': e[0], 'bottom':e[1] , 'right': e[2], 'top': e[3]}
 
         starting_lat = box['top']
         ending_lat = box['bottom']
@@ -121,9 +131,11 @@ class GridMeister:
                 print(lon)
                 chip_name = 'chip' + str(lat) + 'N' + str(lon) +'E'
                 CHIP_LIST.append(chip_name)
-                lon = lon + 2
+                lon = lon + self.chip_lon_increment
+                lon = round(lon, 2)
 
-            lat = lat - 2
+            lat = lat - self.chip_lat_increment
+            lat = round(lat, 2)
 
         return CHIP_LIST
 
@@ -132,7 +144,7 @@ class GridMeister:
         print(chip_name)
         ul_lat,ul_lon = _parse_chip_name(chip_name)
         print(ul_lat,ul_lon)
-        coord_list = _make_chip_poly(ul_lat,ul_lon, self.chip_increment)
+        coord_list = _make_chip_poly(ul_lat,ul_lon, self.chip_lat_increment, self.chip_lon_increment)
         print(coord_list)
         filename = make_filename(self.tile_name, chip_name, '.json')
         print(filename)

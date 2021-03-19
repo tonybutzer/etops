@@ -18,7 +18,7 @@ kill_all_containers:
 	echo docker kill '$$(docker ps -q)'
 
 cmd:
-	python3 run_drb_aoi.py
+	python3 run_tile_aoi.py
 
 config:
 	cp ~/dropbox/myconfig/* ./running_config/
