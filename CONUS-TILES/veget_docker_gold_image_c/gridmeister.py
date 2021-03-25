@@ -165,10 +165,11 @@ class GridMeisterTile:
             filename = make_filename(self.tile_name, chip_name, '.shp')
             full_filename =  self.aoi_dir + '/' + filename
             tile = filename.split('.shp')[0]
-            cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {}  {}'.format(vols,image,full_filename,tile)
+            #cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {}  {}'.format(vols,image,full_filename,tile)
             #cmd = 'docker run -i {} {} python3 bench_api_veget.py -c running_config -s {}  {}'.format(vols,image,full_filename,tile)
-            if not optimize:
-                cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {} --optimize no  {}'.format(vols,image,full_filename,tile)
+            #if not optimize:
+            # Remove OPTIMEISTER complexity
+            cmd = 'docker run -i {} {} python3 api_veget.py -c running_config -s {} --optimize no  {}'.format(vols,image,full_filename,tile)
             print(cmd)
             logname = filename = make_filename(self.tile_name, chip_name, '.log')
             full_logname = './log' + '/' + logname
