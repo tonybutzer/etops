@@ -1,0 +1,1 @@
+{"type": "FeatureCollection", "features": [{"id": "11", "type": "Feature", "properties": {"name": "r50.0_tile11"}, "geometry": {"type": "Polygon", "coordinates": [[[-112.0, 50.0], [-99.0, 50.0], [-99.0, 40.0], [-112.0, 40.0], [-112.0, 50.0]]]}}]}
