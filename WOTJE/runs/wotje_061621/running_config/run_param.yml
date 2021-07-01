@@ -1,0 +1,15 @@
+# ================ ACTIVE config_dict SECTION ==============================
+# === Minimalist Beta Version Params ====
+start_year: 1990
+end_year: 2020
+start_day: 001
+end_day: 366
+
+path_mode: aws # aws, google, local
+accumulate_mode: [daily, monthly, yearly]
+
+geojson_file: a.json
+shapefile: aoi/out_box.shp
+# sample tiff could/should be derived from the geojson clip of the ndvi - or maybe not needed - tbd
+geoproperties_file: /vsis3/dev-et-data/in/Marshall_Islands/NDVI/ndvi_max_001.tif
+

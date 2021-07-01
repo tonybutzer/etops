@@ -1,0 +1,6 @@
+ndvi0:
+  name_fmt: ndvi_max_{}.tif
+  dt_fmt: doy
+  dir_loc: /vsis3/dev-et-data/in/Marshall_Islands/NDVI/
+  climatology: True
+  scaling_factor: 1.0

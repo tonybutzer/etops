@@ -1,0 +1,1 @@
+docker run -i -v `pwd`/AOI:/home/veget/cloud-veg-et-basin/api_veget/AOI tbutzer/wotje_061621 python3 api_veget.py -c running_config -s ./AOI/run_wotje_061621_chip9.61N169.75E.shp  run_wotje_061621_chip9.61N169.75E  2>&1 | tee  ./log/run_wotje_061621_chip9.61N169.75E.log&
