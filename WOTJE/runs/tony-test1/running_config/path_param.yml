@@ -1,0 +1,72 @@
+# Can we take the crs
+# Steffi messed that up!!!
+# input location
+# in_root: dev-et-data
+# output_location
+out_root_prefix: ws-out
+region: WOTJE
+# temporary folder for rasterio vrt -> npy conversion
+temp_folder: ./bogus_temp
+# Dataset info
+
+precip_settings:
+  name_fmt: ppt_{}.tif
+  dt_fmt: YYYYdoy
+  dir_loc: /vsis3/ws-in/Marshall_Islands/PPT/TRMM/
+  climatology: False
+  na_vals: []
+
+ndvi_settings:
+  dynamic_settings: True
+  dynamic_file: ./running_config/dynamic_config.yml
+  interval_list:
+     - (1998, 2020)
+  dynamic_keys:
+     - ndvi0
+
+pet_settings:
+  name_fmt: pet_{}.tif
+  dt_fmt: doy
+  dir_loc: /vsis3/ws-in/Marshall_Islands/Wotje/ETo/
+  climatology: True
+  na_vals: []
+
+tmin_settings:
+  name_fmt: tmin{}.tif
+  dt_fmt: doy
+  dir_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Temp/tmin/
+  climatology: True
+
+
+tmax_settings:
+  name_fmt: tmax{}.tif
+  dt_fmt: doy
+  dir_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Temp/tmax/
+  climatology: True
+
+
+tavg_settings:
+  name_fmt: tavg{}.tif
+  dt_fmt: doy
+  dir_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Temp/tavg/
+  climatology: True
+
+
+# === Static raster data settings ====
+watermask_settings:
+  file_loc: /vsis3/ws-in/NorthAmerica/water_global.tif
+whc_settings:
+  file_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Soil/waterholdingcapcacity.tif
+saturation_settings:
+  file_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Soil/soilsaturation.tif
+field_capacity_settings:
+  file_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Soil/fieldcapacity.tif
+interception_settings:
+  file_loc: /vsis3/ws-in/Marshall_Islands/Wotje/Soil/intercept.tif #15%
+
+
+
+
+
+
+
